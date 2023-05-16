@@ -1,0 +1,15 @@
+Anims.zip
+Anims/
+Meshes/
+Music/
+Presets/
+Scripts.backup/
+Textures/
+Video/
+WORLDS/
+.vscode/
+.dls/
+*.disabled
+*.[bB][iI][nN]
+*.[dD][aA][tT]
+*.[cC][sS][lL]
