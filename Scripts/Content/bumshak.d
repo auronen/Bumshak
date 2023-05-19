@@ -8413,49 +8413,113 @@ const string episode4_text = "Orkischer Kriegsherr";
 
 
 // Logs
+const string nurshak_mission = "Die Burg im Minental";
+const string nurshak_mission_1 = "Ich habe den Kriegsherren Nur-Shak vor der Burg getroffen. Meine Brüder planen tatsächlich den Sturm auf die Burg. Aber vorher muss ich Nur-Shak noch die Ringe der drei anderen Kriegsherren bringen. Sie sind ein Symbol für ihre Bereitschaft zur Schlacht.";
+const string nurshak_mission_2 = "Ich finde die Kriegsherren Tum-Pak, Durkash und Farrok bei ihren Truppen rund um die Burg. Ich erkenne sie an ihren Äxten. Ja klar.";
+const string nurshak_mission_3 = "Ich habe Nur-Shak die drei Ringe der Kriegsherren gebracht. Er hat mich zur Elite befördert. Der Sturm auf die Burg kann nun beginnen.";
+const string nurshak_mission_4 = "Tum-Pak hat mir seinen Ring gegeben.";
+const string nurshak_mission_5 = "Durkash hat mir seinen Ring gegeben.";
+const string nurshak_mission_6 = "Farrok hat mir seinen Ring gegeben.";
+const string nurshak_mission_7 = "Farrok hat mir seinen Ring gegeben.";
+const string nurshak_mission_8 = "Ich soll zur Burg der Menschen aufbrechen. Angeblich steht der Sturm kurz bevor. Dort soll ich mich beim Kriegsherren Nur-Shak melden. Er steht genau vor dem Tor der Burg. Ich erkenne ihn an der Axt.";
+
 const string narkash_mission1 = "Rohes Fleisch";
+const string narkash_mission1_1 = "Narkash hat mich beauftragt, zehn mal rohes Fleisch zu beschaffen. In der Nähe treiben sich Beisser rum, die köstliches Fleisch haben.";
+const string narkash_mission1_2 = "Ich habe die Beisser getötet und die Horde mit Fleisch versorgt.";
 
 const string narkash_mission2 = "Zutaten";
+const string narkash_mission2_1 = "Narkash hat mich beauftragt, zehn Heilpflanzen für den Schamanen zu beschaffen. Narkash riet mir, entlang der Palisade zu suchen. Für die Horde!";
+const string narkash_mission2_2 = "Narkash hat mich beauftragt, zehn Heilpflanzen für den Schamanen zu beschaffen. Narkash riet mir, entlang der Palisade zu suchen. Sowas blödes! Ich bin doch nicht zum Kräutersammeln da. Ich will Menschenschädel spalten.";
+const string narkash_mission2_3 = "Ich habe die zehn Heilpflanzen besorgt. Mögen sie unseren Brüdern im Krieg gegen die Menschen neue Kraft schenken.";
 
 const string narkash_mission3 = "Hund Gottes";
+const string narkash_mission3_1 = "Der Warg Bubba ist verschwunden. Er hat einen Beisser verfolgt und ist nicht wieder zurück gekehrt. Ich soll ihn finden und sicher ins Lager zurück bringen.";
+const string narkash_mission3_2 = "Ich habe Bubba gefunden. Ich sollte Narkash Meldung erstatten.";
+const string narkash_mission3_3 = "Ich habe Narkash erzählt, dass ich Bubba gefunden habe. Er war sehr erfreut.";
 
 const string narkash_mission4 = "Gash-Pak";
+const string narkash_mission4_1 = "Narkash hat mich beauftragt, die Axt von Gash-Pak zu bergen. Seine Leiche muss irgendwo in einer Höhle bei der Burg liegen.";
+const string narkash_mission4_2 = "Ich habe Gash-Paks Axt geborgen und seine Ehre wiederhergestellt.";
 
 const string narkash_mission5 = "KULU-MULU";
+const string narkash_mission5_1 = "Um in den Stand der Krieger erhoben zu werden, muss ich ein KULU-MULU mein eigen nennen.";
+const string narkash_mission5_2 = "Die drei Bestandteile eines KULU-MULUS sind: die Zähne eines jungen Bluthundes, die Krallen eines Snappers und die Zangen eines Minecrawlers. Wenn ich alle drei Bestandteile habe, soll ich mich bei Narkash melden.";
+const string narkash_mission5_3 = "Ich habe alle Bestandteile des KULU-MULU besorgt. Ich bin nun ein Krieger. Ich kann es gar nicht abwarten, endlich meinen Brüdern im Krieg gegen die Menschen zur Seite stehen zu dürfen.";
 
-const string nurshak_mission = "Die Burg im Minental";
 
 const string tumpak_mission = "Das Horn eines Schattenläufers";
+const string tumpak_mission_1 = "Tum-Pak gibt mir seinen Ring erst, wenn ich ihm das Horn eines Schattenläufers besorge. In dem kleinen Wald in der Nähe treibt sich einer rum.";
+const string tumpak_mission_2 = "Ich habe Tum-Pak das Horn gebracht. Dafür hat er mir seinen Ring gegeben.";
 
 const string farrok_mission = "Ein schickes Schwert";
+const string farrok_mission_1 = "Farrok gibt mir seinen Ring erst, wenn ich ihm das Schwert eines Echsenmenschen bringe. In dem kleinen Zelt auf der Anhöhe treibt sich einer rum.";
+const string farrok_mission_2 = "Ich habe Farrok das Schwert gebracht. Es steht ihm wirklich gut. Dafür hat er mir seinen Ring gegeben.";
+const string farrok_mission_3 = "Ich habe Farrok das Schwert gebracht. Keine Ahnung, was der an dem schäbigen Teil findet. Dafür hat er mir seinen Ring gegeben.";
 
 const string durkash_mission = "Seelischer Beistand";
+const string durkash_mission_1 = "Durkash gibt mir seinen Ring erst, wenn er den seelischen Beistand des Schamanen Ho'Ra-Nakk erhalten hat. Ich finde den Schamanen in unserem alten Dorf vor dem eingestürzten Tempel.";
+const string durkash_mission_2 = "Ich habe mit Ho'Ra-Nakk gesprochen. Er hat mir einen Glücksbringer für Durkash mitgegeben. Er wird Durkash helfen, in der Schlacht niemals mutlos zu sein.";
+const string durkash_mission_3 = "Ich habe Durkash den Glücksbringer von Ho'Ra-Nakk gebracht. Dafür hat er mir seinen Ring gegeben.";
 
 const string sturm_mission = "Der Sturm auf die Burg";
+const string sturm_mission_1 = "Der Sturm auf die Burg war erfolgreich. Die Burg gehört nun uns.";
+const string sturm_mission_2 = "Die Sturm auf die Burg hat begonnen. Tod den Menschen!";
 
 const string urshak_mission = "Geflohene Paladine";
+const string urshak_mission_1 = "Der Vorstand der Paladine ist geflohen und auf dem Weg zum Pass nach Khorinis. Ur-Shak hat mich beauftragt, ihn zur Strecke zu bringen.";
+const string urshak_mission_2 = "Wenn ich erfolgreich bin, wird Ur-Shak mich zum Orkischen Kriegsherren ernennen. Das ist die Chance, auf die ich immer gewartet habe.";
+const string urshak_mission_3 = "Ich habe den Vorstand der Paladine erschlagen. Ur-Shak hat mich zum Orkischen Kriegsherr ernannt und mir die Befehlsgewalt über die Burg erteilt. Ich habe es endlich geschafft!";
 
 const string mission1 = "Ein Dieb in der Nacht";
+const string mission1_1 = "Ein Dieb klaut Nahrung aus dem Lager in der Kapelle. Ich soll bis Mitternacht schlafen und ihm hinter den Kisten zwischen Haupthaus und Kapelle auflauern. Ich sollte ihn aber erst zur Rede stellen, wenn er sich im Lager befindet.";
+const string mission1_2 = "Ich habe den Dieb auf frischer Tat ertappt. Ich sollte Ur-Shak Bescheid geben.";
+const string mission1_3 = "Ur-Shak war sehr froh, dass ich den Dieb geschnappt habe.";
 
 const string mission2 = "Verstreute Ritter";
+const string mission2_1 = "Ich soll mindestens vier Ritter erschlagen und Ur-Shak ihre Runen bringen. Ich habe gehört, dass sie sich bevorzugt in Höhlen verstecken.";
+const string mission2_2 = "Ich habe Ur-Shak die Runen der Ritter gebracht. Nun können wir alle ruhiger schlafen.";
 
 const string mission3 = "Eier für Tarokhan";
+const string mission3_1 = "Der Feuerdrache Tarokhan hat mich beauftragt, die drei Eier seiner gefallenen Brüder zu bergen. Ich soll im Sumpf, in den Felsen hoch auf dem Berg und in der alten Bergfestung suchen. Die Brut im Eisgebiet ist schon verloren. Dort werde ich nichts finden.";
+const string mission3_2 = "Ich habe Tarokhan die Eier gebracht. Er sagte, er würde mich später entlohnen.";
 
 const string mission4 = "Goshak-Gar";
+const string mission4_1 = "Ich soll den verrückten Schamanen Goshak-Gar im Eisgebiet aufsuchen. Entweder er läßt sich zur Vernunft bringen oder er muss sterben.";
+const string mission4_2 = "Ich habe Goshak-Gar gefunden. Er ist völlig übergeschnappt. Ich werde ihn töten.";
+const string mission4_3 = "Ich habe Ur-Shak von Goshak-Gars Tod berichtet. Mögen die Ahnen gnädig mit seiner Seele sein.";
 
 const string mission5 = "Gold für die Liebste";
+const string mission5_1 = "Ich wurde in die Hauptstadt beordert. Ich soll zum Oberst befördert werden und kann endlich meine Bakka heiraten.";
+const string mission5_2 = "Ich brauche aber noch ein Hochzeitsgeschenk. Wenn ich zehn Goldbrocken finde, kann Nur-Shak mir eine Halskette für sie schmieden.";
+const string mission5_3 = "Ich habe genug Goldbrocken gefunden und zu Nur-Shak gebracht. Er wird mir eine Halskette schmieden.";
 
 const string mission6 = "Mysteriöses im Turm";
+const string mission6_1 = "Tum-Pak erzählte mir von merkwürdigen Aktivitäten rund um den alten Turm. Vielleicht sollte ich mir das mal anschauen.";
+const string mission6_2 = "Ich habe den Turm aufgesucht. Er wird von einer freundlichen Hexe bewohnt. Sie hat mir einen Talisman geschenkt. Er wird mich vor den Kräften des kalten Todes bewahren.";
+const string mission6_3 = "Ich habe den Turm aufgesucht. Er wird von einer garstigen Hexe bewohnt. Ich werde sie töten.";
+const string mission6_4 = "Ich habe Tum-Pak erzählt, dass die Sache mit dem Turm geregelt ist.";
+
 
 const string mission7 = "Eine Axt für Bumshak";
+const string mission7_1 = "Der Feuerdrache Tarokhan hat mir von einer sehr mächtigen Axt erzählt. Sie befindet sich dort, wo ich sonst nicht hinkomme.";
+const string mission7_2 = "Ich habe die Axt gefunden. Ich sollte sie weise einsetzen.";
 
 const string mission8 = "Das entführte Kind";
+const string mission8_1 = "Der Sohn eines Kriegers ist von Untoten entführt und in die Höhle unter dem Steinkreis geschleppt worden. Ich soll ihn dort rausholen.";
+const string mission8_2 = "Das Kind konnte aus der Höhle fliehen. Ich sollte den Vater aufsuchen.";
+const string mission8_3 = "Ich habe das Kind gerettet. Es ist jetzt wieder bei seinem Vater.";
 
 const string mission9 = "Eine Statue für Workash";
+const string mission9_1 = "Ich soll einem Schamanen seine Statue zurückbringen. Sie wurde von den Skeletten in der Mine geklaut.";
+const string mission9_2 = "Ich habe dem Schamanen seine Statue gebracht. Als Belohnung hat er mir einen Goldbrocken geschenkt.";
 
 const string mission10 = "Schöne Grüße";
+const string mission10_1 = "Ich soll Farrok in der Burg von seinem Bruder Sarrok grüßen.";
+const string mission10_2 = "Ich habe Farrok von seinem Bruder gegrüßt.";
 
 const string mission11 = "Ein Schafsfell für Burrok";
+const string mission11_1 = "Die Elite Burrok aus unserem alten Dorf hätte gerne ein Schafsfell.";
+const string mission11_2 = "Ich habe Burrok das Schafsfell gebracht. Als Belohnung hat er mir zwei Goldbrocken geschenkt.";
 
 
 
@@ -28423,7 +28487,7 @@ func void dia_none_1001_hexe_yes() {
     ai_output(self, other, "DIA_NONE_1001_Hexe_17_03"); //Danke, edler Ork Ritter. Ich schenke dir diesen Talisman. Er wird dich vor den Kräften des kalten Todes bewahren. Lebe wohl.
     log_createtopic(mission6, log_mission);
     log_settopicstatus(mission6, log_running);
-    b_logentry(mission6, "Ich habe den Turm aufgesucht. Er wird von einer freundlichen Hexe bewohnt. Sie hat mir einen Talisman geschenkt. Er wird mich vor den Kräften des kalten Todes bewahren.");
+    b_logentry(mission6, mission6_2);
     createinvitems(hero, itmi_frostguard, 1);
     ai_stopprocessinfos(self);
 };
@@ -28435,7 +28499,7 @@ func void dia_none_1001_hexe_no() {
     ai_output(self, other, "DIA_NONE_1001_Hexe_17_05"); //NEIN!!!
     log_createtopic(mission6, log_mission);
     log_settopicstatus(mission6, log_running);
-    b_logentry(mission6, "Ich habe den Turm aufgesucht. Er wird von einer garstigen Hexe bewohnt. Ich werde sie töten.");
+    b_logentry(mission6, mission6_3);
     b_startotherroutine(self, "Flee");
     ai_stopprocessinfos(self);
 };
@@ -28506,7 +28570,7 @@ func void dia_none_100_tarokhan_mission3_info() {
     ai_output(self, other, "DIA_NONE_100_Tarokhan_20_06"); //Und nun entferne dich. Ich werde dich reich belohnen.
     log_createtopic(mission3, log_mission);
     log_settopicstatus(mission3, log_running);
-    b_logentry(mission3, "Der Feuerdrache Tarokhan hat mich beauftragt, die drei Eier seiner gefallenen Brüder zu bergen. Ich soll im Sumpf, in den Felsen hoch auf dem Berg und in der alten Bergfestung suchen. Die Brut im Eisgebiet ist schon verloren. Dort werde ich nichts finden.");
+    b_logentry(mission3, mission3_1);
     ai_stopprocessinfos(self);
 };
 
@@ -28531,7 +28595,7 @@ func void dia_none_100_tarokhan_mission3_solve_info() {
     ai_output(other, self, "DIA_NONE_100_Tarokhan_20_07"); //Ich bringe dir die Eier, weiser Tarokhan.
     ai_output(self, other, "DIA_NONE_100_Tarokhan_20_08"); //Hmmm. Ich wusste, dass du mich nicht enttäuschen wirst, Ork.
     ai_output(self, other, "DIA_NONE_100_Tarokhan_20_09"); //Und nun entferne dich. Ich werde dich später entlohnen.
-    b_logentry(mission3, "Ich habe Tarokhan die Eier gebracht. Er sagte, er würde mich später entlohnen.");
+    b_logentry(mission3, mission3_2);
     log_settopicstatus(mission3, log_success);
     npc_removeinvitems(hero, itmi_dragonegg, 3);
     mis_3 = true;
@@ -28562,7 +28626,7 @@ func void dia_none_100_tarokhan_mission7_info() {
     ai_output(self, other, "DIA_NONE_100_Tarokhan_20_13"); //Und nun entferne dich.
     log_createtopic(mission7, log_mission);
     log_settopicstatus(mission7, log_running);
-    b_logentry(mission7, "Der Feuerdrache Tarokhan hat mir von einer sehr mächtigen Axt erzählt. Sie befindet sich dort, wo ich sonst nicht hinkomme.");
+    b_logentry(mission7, mission7_1);
     ai_stopprocessinfos(self);
     wld_insertitem(itmw_2h_ahnenaxt /*3319*/, "START_OW_ABANDONEDMINE");
     wld_insertnpc(djg_322_orkjaeger /*5005*/, "OW_VM_ENTRANCE");
@@ -28589,7 +28653,7 @@ func void dia_none_100_tarokhan_mission7_solve_info() {
     ai_output(other, self, "DIA_NONE_100_Tarokhan_20_14"); //Ich habe die Axt gefunden, weiser Tarokhan.
     ai_output(self, other, "DIA_NONE_100_Tarokhan_20_15"); //Hmmm. Damit bist du mächtiger als die meisten deines Volkes. Setze sie weise ein.
     ai_output(self, other, "DIA_NONE_100_Tarokhan_20_16"); //Und nun entferne dich.
-    b_logentry(mission7, "Ich habe die Axt gefunden. Ich sollte sie weise einsetzen.");
+    b_logentry(mission7, mission7_2);
     log_settopicstatus(mission7, log_success);
     mis_7 = true;
     ai_stopprocessinfos(self);
@@ -28633,12 +28697,12 @@ func void dia_orc_101_urshak_info() {
     ai_output(self, other, "DIA_ORC_101_Urshak_18_02"); //Aber noch ist deine Arbeit nicht getan. Der Vorstand der Paladine ist geflohen und auf dem Weg zum Pass nach Khorinis.
     ai_output(self, other, "DIA_ORC_101_Urshak_18_03"); //Verfolge ihn und bringe ihn zur Strecke. Wenn du triumphierst, werde ich dich zum Orkischen Kriegsherren ernennen.
     ai_output(self, other, "DIA_ORC_101_Urshak_18_04"); //Möge dich die Weisheit unserer Ahnen leiten.
-    b_logentry(sturm_mission, "Der Sturm auf die Burg war erfolgreich. Die Burg gehört nun uns.");
+    b_logentry(sturm_mission, sturm_mission_1);
     log_settopicstatus(sturm_mission, log_success);
     log_createtopic(urshak_mission, log_mission);
     log_settopicstatus(urshak_mission, log_running);
-    b_logentry(urshak_mission, "Der Vorstand der Paladine ist geflohen und auf dem Weg zum Pass nach Khorinis. Ur-Shak hat mich beauftragt, ihn zur Strecke zu bringen.");
-    b_logentry(urshak_mission, "Wenn ich erfolgreich bin, wird Ur-Shak mich zum Orkischen Kriegsherren ernennen. Das ist die Chance, auf die ich immer gewartet habe.");
+    b_logentry(urshak_mission, urshak_mission_1);
+    b_logentry(urshak_mission, urshak_mission_2);
     ai_stopprocessinfos(self);
     wld_insertnpc(pal_252_parcival /*5172*/, "OW_PATH_1");
     wld_insertnpc(pal_251_oric /*5170*/, "OW_PATH_1_1");
@@ -28666,7 +28730,7 @@ func void dia_orc_101_urshak_solve_info() {
     ai_output(other, self, "DIA_ORC_101_Urshak_18_05"); //Ich habe den Vorstand der Paladine erschlagen.
     ai_output(self, other, "DIA_ORC_101_Urshak_18_06"); //Du erfüllst uns alle mit Stolz. Dann soll es so sein: Ich ernenne dich hiermit zum Orkischen Kriegsherr.
     ai_output(self, other, "DIA_ORC_101_Urshak_18_07"); //Desweiteren erteile ich dir die Befehlsgewalt über die Burg. Möge sie nie wieder in Menschenhand fallen.
-    b_logentry(urshak_mission, "Ich habe den Vorstand der Paladine erschlagen. Ur-Shak hat mich zum Orkischen Kriegsherr ernannt und mir die Befehlsgewalt über die Burg erteilt. Ich habe es endlich geschafft!");
+    b_logentry(urshak_mission, urshak_mission_3);
     log_settopicstatus(urshak_mission, log_success);
     mis_urshak = true;
     ai_stopprocessinfos(self);
@@ -28705,7 +28769,7 @@ func void dia_orc_101_urshak_mission1_info() {
     ai_output(other, self, "DIA_ORC_101_Urshak_18_18"); //Ich werde den Dieb schnappen, Ur-Shak.
     log_createtopic(mission1, log_mission);
     log_settopicstatus(mission1, log_running);
-    b_logentry(mission1, "Ein Dieb klaut Nahrung aus dem Lager in der Kapelle. Ich soll bis Mitternacht schlafen und ihm hinter den Kisten zwischen Haupthaus und Kapelle auflauern. Ich sollte ihn aber erst zur Rede stellen, wenn er sich im Lager befindet.");
+    b_logentry(mission1, mission1_1);
     createinvitems(hero, itmi_schlummerfell, 1);
     ai_stopprocessinfos(self);
     wld_insertnpc(orc_144_dieb /*5102*/, "OC_WALL_05");
@@ -28731,7 +28795,7 @@ func int dia_orc_101_urshak_mission1_solve_condition() {
 func void dia_orc_101_urshak_mission1_solve_info() {
     ai_output(other, self, "DIA_ORC_101_Urshak_18_19"); //Ich habe den Dieb geschnappt.
     ai_output(self, other, "DIA_ORC_101_Urshak_18_20"); //Ausgezeichnet. Ich werde ihn aus der Horde verbannen. Komme wieder, wenn du Zeit für einen weiteren Auftrag hast.
-    b_logentry(mission1, "Ur-Shak war sehr froh, dass ich den Dieb geschnappt habe.");
+    b_logentry(mission1, mission1_3);
     log_settopicstatus(mission1, log_success);
     mis_1 = true;
     ai_stopprocessinfos(self);
@@ -28764,7 +28828,7 @@ func void dia_orc_101_urshak_mission2_info() {
     ai_output(other, self, "DIA_ORC_101_Urshak_18_25"); //Ich werde dir ihre Runen bringen, Ur-Shak.
     log_createtopic(mission2, log_mission);
     log_settopicstatus(mission2, log_running);
-    b_logentry(mission2, "Ich soll mindestens vier Ritter erschlagen und Ur-Shak ihre Runen bringen. Ich habe gehört, dass sie sich bevorzugt in Höhlen verstecken.");
+    b_logentry(mission2, mission2_1);
     ai_stopprocessinfos(self);
 };
 
@@ -28789,7 +28853,7 @@ func void dia_orc_101_urshak_mission2_solve_info() {
     ai_output(other, self, "DIA_ORC_101_Urshak_18_26"); //Ich bringe dir die Runen der Ritter.
     ai_output(self, other, "DIA_ORC_101_Urshak_18_27"); //Sehr gut. Nun können wir alle ruhiger schlafen. Der Feuerdrache Tarokhan will dich sprechen. Du findest ihn im Hof der Burg.
     ai_output(self, other, "DIA_ORC_101_Urshak_18_28"); //Das ist eine große Ehre für dich, Bumshak. Erzürne ihn nicht und erfülle alles was er von dir fordert.
-    b_logentry(mission2, "Ich habe Ur-Shak die Runen der Ritter gebracht. Nun können wir alle ruhiger schlafen.");
+    b_logentry(mission2, mission2_2);
     log_settopicstatus(mission2, log_success);
     npc_removeinvitems(hero, itru_pallight, npc_hasitems(hero, itru_pallight));
     mis_2 = true;
@@ -28820,7 +28884,7 @@ func void dia_orc_101_urshak_mission4_info() {
     ai_output(self, other, "DIA_ORC_101_Urshak_18_32"); //Suche Goshak-Gar auf und versuche, ihn zur Vernunft zu bringen. Wenn das scheitert, dann beschwichtige die Ahnen mit seinem Blut im weißen Schnee.
     log_createtopic(mission4, log_mission);
     log_settopicstatus(mission4, log_running);
-    b_logentry(mission4, "Ich soll den verrückten Schamanen Goshak-Gar im Eisgebiet aufsuchen. Entweder er läßt sich zur Vernunft bringen oder er muss sterben.");
+    b_logentry(mission4, mission4_1);
     ai_stopprocessinfos(self);
 };
 
@@ -28845,7 +28909,7 @@ func void dia_orc_101_urshak_mission4_solve_info() {
     ai_output(other, self, "DIA_ORC_101_Urshak_18_33"); //Goshak-Gars Blut färbt den Schnee rot.
     ai_output(self, other, "DIA_ORC_101_Urshak_18_34"); //(Seufzt) Das habe ich befürchtet. Nun gut, du hast deine Aufgabe erfüllt. Mögen die Ahnen gnädig mit seiner Seele sein.
     ai_output(self, other, "DIA_ORC_101_Urshak_18_35"); //Du solltest nun mit Nur-Shak reden. Er hat Neuigkeiten für dich. Er steht vor der Kerkertür.
-    b_logentry(mission4, "Ich habe Ur-Shak von Goshak-Gars Tod berichtet. Mögen die Ahnen gnädig mit seiner Seele sein.");
+    b_logentry(mission4, mission4_3);
     log_settopicstatus(mission4, log_success);
     npc_removeinvitems(hero, itmw_2h_schamanenstab, 1);
     mis_4 = true;
@@ -28895,8 +28959,8 @@ func void dia_orc_102_nurshak_info() {
     ai_output(self, other, "DIA_ORC_102_Nurshak_18_04"); //Sie sind ein Symbol für ihre Bereitschaft zur Schlacht. Wenn ich alle Ringe habe, werden ich das Horn des Gorrak ertönen lassen und den Angriff eröffnen.
     ai_output(self, other, "DIA_ORC_102_Nurshak_18_05"); //Du findest die Kriegsherren Tum-Pak, Durkash und Farrok bei ihren Truppen rund um die Burg. Du erkennst sie an ihren Äxten. Beeile dich. Für die Horde.
     ai_output(other, self, "DIA_ORC_102_Nurshak_18_06"); //Für die Horde, Nur-Shak.
-    b_logentry(nurshak_mission, "Ich habe den Kriegsherren Nur-Shak vor der Burg getroffen. Meine Brüder planen tatsächlich den Sturm auf die Burg. Aber vorher muss ich Nur-Shak noch die Ringe der drei anderen Kriegsherren bringen. Sie sind ein Symbol für ihre Bereitschaft zur Schlacht.");
-    b_logentry(nurshak_mission, "Ich finde die Kriegsherren Tum-Pak, Durkash und Farrok bei ihren Truppen rund um die Burg. Ich erkenne sie an ihren Äxten. Ja klar.");
+    b_logentry(nurshak_mission, nurshak_mission_1);
+    b_logentry(nurshak_mission, nurshak_mission_2);
     ai_stopprocessinfos(self);
 };
 
@@ -28921,12 +28985,12 @@ func void dia_orc_102_nurshak_solve_info() {
     ai_output(other, self, "DIA_ORC_102_Nurshak_18_07"); //Ich habe alle Kriegsherren aufgesucht. Sie sind bereit für den Sturm auf die Burg. Hier sind ihre Ringe.
     ai_output(self, other, "DIA_ORC_102_Nurshak_18_08"); //Ja. Endlich. Du hast dich bewährt. Ich erhebe dich in den Stand der Elite Krieger. Hier hast du eine neue Rüstung, eine neue Waffe und ein paar Heiltränke.
     ai_output(self, other, "DIA_ORC_102_Nurshak_18_09"); //Ich werde jetzt das Horn des Garrok erklingen lassen. Tod den Menschen. Bist du bereit?
-    b_logentry(nurshak_mission, "Ich habe Nur-Shak die drei Ringe der Kriegsherren gebracht. Er hat mich zur Elite befördert. Der Sturm auf die Burg kann nun beginnen.");
+    b_logentry(nurshak_mission, nurshak_mission_3);
     log_settopicstatus(nurshak_mission, log_success);
     npc_removeinvitems(hero, itri_orcelitering, 3);
     log_createtopic(sturm_mission, log_mission);
     log_settopicstatus(sturm_mission, log_running);
-    b_logentry(sturm_mission, "Die Sturm auf die Burg hat begonnen. Tod den Menschen!");
+    b_logentry(sturm_mission, sturm_mission_2);
     info_clearchoices(dia_orc_102_nurshak_solve /*5365*/);
     info_addchoice(dia_orc_102_nurshak_solve /*5365*/, "Ja, ich bin bereit. Tod den Menschen.", dia_orc_102_nurshak_episode3);
 };
@@ -28988,8 +29052,8 @@ func void dia_orc_102_nurshak_mission5_info() {
     ai_output(other, self, "DIA_ORC_102_Nurshak_18_19"); //Danke, Nur-Shak. Ich werde Bakka zur glücklichsten Frau machen.
     log_createtopic(mission5, log_mission);
     log_settopicstatus(mission5, log_running);
-    b_logentry(mission5, "Ich wurde in die Hauptstadt beordert. Ich soll zum Oberst befördert werden und kann endlich meine Bakka heiraten.");
-    b_logentry(mission5, "Ich brauche aber noch ein Hochzeitsgeschenk. Wenn ich zehn Goldbrocken finde, kann Nur-Shak mir eine Halskette für sie schmieden.");
+    b_logentry(mission5, mission5_1);
+    b_logentry(mission5, mission5_2);
     ai_stopprocessinfos(self);
 };
 
@@ -29014,7 +29078,7 @@ func void dia_orc_102_nurshak_mission5_solve_info() {
     ai_output(other, self, "DIA_ORC_102_Nurshak_18_20"); //Ich habe die Goldbrocken.
     ai_output(self, other, "DIA_ORC_102_Nurshak_18_21"); //Ausgezeichnet, Bumshak. Schau wie sie glänzen. Bakka wird dich vergöttern. Ich werde mich gleich an die Arbeit machen.
     ai_output(self, other, "DIA_ORC_102_Nurshak_18_22"); //Du solltest dich jetzt für die Abreise bereit machen. Komme später wieder.
-    b_logentry(mission5, "Ich habe genug Goldbrocken gefunden und zu Nur-Shak gebracht. Er wird mir eine Halskette schmieden.");
+    b_logentry(mission5, mission5_3);
     log_settopicstatus(mission5, log_success);
     npc_removeinvitems(hero, itmi_bakgld, 10);
     mis_5 = true;
@@ -29144,7 +29208,7 @@ func void dia_orc_113_tumpak_info() {
     ai_output(self, other, "DIA_ORC_113_Tumpak_18_03"); //In dem kleinen Wald in der Nähe treibt sich einer rum. Weggetreten.
     log_createtopic(tumpak_mission, log_mission);
     log_settopicstatus(tumpak_mission, log_running);
-    b_logentry(tumpak_mission, "Tum-Pak gibt mir seinen Ring erst, wenn ich ihm das Horn eines Schattenläufers besorge. In dem kleinen Wald in der Nähe treibt sich einer rum.");
+    b_logentry(tumpak_mission, tumpak_mission_1);
     ai_stopprocessinfos(self);
 };
 
@@ -29168,8 +29232,8 @@ func int dia_orc_113_tumpak_solve_condition() {
 func void dia_orc_113_tumpak_solve_info() {
     ai_output(other, self, "DIA_ORC_113_Tumpak_18_04"); //Ich habe den Schattenläufer erlegt und bringe dir das Horn, Tum-Pak.
     ai_output(self, other, "DIA_ORC_113_Tumpak_18_05"); //Hah. Das hätte ich dir nicht zugetraut. Nun gut, hier hast du den Ring. Weggetreten.
-    b_logentry(tumpak_mission, "Ich habe Tum-Pak das Horn gebracht. Dafür hat er mir seinen Ring gegeben.");
-    b_logentry(nurshak_mission, "Tum-Pak hat mir seinen Ring gegeben.");
+    b_logentry(tumpak_mission, tumpak_mission_2);
+    b_logentry(nurshak_mission, nurshak_mission_4);
     log_settopicstatus(tumpak_mission, log_success);
     mis_tumpak = true;
     npc_removeinvitems(hero, itat_shadowhorn, 1);
@@ -29228,7 +29292,7 @@ func void dia_orc_113_tumpak_mission6_info() {
     ai_output(other, self, "DIA_ORC_113_Tumpak_18_15"); //Danke für die Information, Tum-Pak.
     log_createtopic(mission6, log_mission);
     log_settopicstatus(mission6, log_running);
-    b_logentry(mission6, "Tum-Pak erzählte mir von merkwürdigen Aktivitäten rund um den alten Turm. Vielleicht sollte ich mir das mal anschauen.");
+    b_logentry(mission6, mission6_1);
     ai_stopprocessinfos(self);
 };
 
@@ -29252,7 +29316,7 @@ func int dia_orc_113_tumpak_mission6_solve_condition() {
 func void dia_orc_113_tumpak_mission6_solve_info() {
     ai_output(other, self, "DIA_ORC_113_Tumpak_18_16"); //Ich habe mich um die Sache mit dem Turm gekümmert. Es ist alles in Ordnung.
     ai_output(self, other, "DIA_ORC_113_Tumpak_18_17"); //Danke, Bumshak.
-    b_logentry(mission6, "Ich habe Tum-Pak erzählt, dass die Sache mit dem Turm geregelt ist.");
+    b_logentry(mission6, mission6_4);
     log_settopicstatus(mission6, log_success);
     mis_6 = true;
     ai_stopprocessinfos(self);
@@ -29304,7 +29368,7 @@ func void dia_orc_116_durkash_info() {
     ai_output(self, other, "DIA_ORC_116_Durkash_18_07"); //Suche ihn auf und bitte ihn um seelischen Beistand. Dann werde ich dir auch meinen Ring überlassen.
     log_createtopic(durkash_mission, log_mission);
     log_settopicstatus(durkash_mission, log_running);
-    b_logentry(durkash_mission, "Durkash gibt mir seinen Ring erst, wenn er den seelischen Beistand des Schamanen Ho'Ra-Nakk erhalten hat. Ich finde den Schamanen in unserem alten Dorf vor dem eingestürzten Tempel.");
+    b_logentry(durkash_mission, durkash_mission_1);
     ai_stopprocessinfos(self);
 };
 
@@ -29329,8 +29393,8 @@ func void dia_orc_116_durkash_solve_info() {
     ai_output(other, self, "DIA_ORC_116_Durkash_18_08"); //Ich habe mit Ho'Ra-Nakk gesprochen und bringe dir diesen Glücksbringer.
     ai_output(self, other, "DIA_ORC_116_Durkash_18_09"); //Ausgezeichnet. Hier hast du meinen Ring, Krieger. Ich kann es einfach nicht abwarten, diesen haarlosen Schwächlingen in den Arsch zu treten.
     npc_removeinvitems(hero, itmi_gluecksbringer, 1);
-    b_logentry(durkash_mission, "Ich habe Durkash den Glücksbringer von Ho'Ra-Nakk gebracht. Dafür hat er mir seinen Ring gegeben.");
-    b_logentry(nurshak_mission, "Durkash hat mir seinen Ring gegeben.");
+    b_logentry(durkash_mission, durkash_mission_3);
+    b_logentry(nurshak_mission, nurshak_mission_5);
     log_settopicstatus(durkash_mission, log_success);
     mis_durkash = true;
     createinvitems(hero, itri_orcelitering, 1);
@@ -29406,7 +29470,7 @@ func void dia_orc_123_farrok_info() {
     ai_output(self, other, "DIA_ORC_123_Farrok_18_05"); //Aber du bist neu hier. Dich kennt hier noch keiner. Im Zelt oben auf der Anhöhe treibt sich einer von den Bastarden rum. Bringe mir sein Schwert.
     log_createtopic(farrok_mission, log_mission);
     log_settopicstatus(farrok_mission, log_running);
-    b_logentry(farrok_mission, "Farrok gibt mir seinen Ring erst, wenn ich ihm das Schwert eines Echsenmenschen bringe. In dem kleinen Zelt auf der Anhöhe treibt sich einer rum.");
+    b_logentry(farrok_mission, farrok_mission_1);
     ai_stopprocessinfos(self);
     wld_insertnpc(mst_draconian /*4932*/, "FP_ROAM_HOSHPAK_01");
 };
@@ -29446,8 +29510,8 @@ func void dia_orc_123_farrok_yes() {
     ai_removeweapon(self);
     ai_output(other, self, "DIA_ORC_123_Farrok_18_08"); //Wunderschön.
     ai_output(self, other, "DIA_ORC_123_Farrok_18_09"); //Ja, so ist es. Na ja egal, hier hast du meinen Ring. Tod den Menschen, Krieger.
-    b_logentry(farrok_mission, "Ich habe Farrok das Schwert gebracht. Es steht ihm wirklich gut. Dafür hat er mir seinen Ring gegeben.");
-    b_logentry(nurshak_mission, "Farrok hat mir seinen Ring gegeben.");
+    b_logentry(farrok_mission, farrok_mission_2);
+    b_logentry(nurshak_mission, nurshak_mission_6);
     log_settopicstatus(farrok_mission, log_success);
     mis_farrok = true;
     createinvitems(hero, itri_orcelitering, 1);
@@ -29458,8 +29522,8 @@ func void dia_orc_123_farrok_no() {
     ai_removeweapon(self);
     ai_output(other, self, "DIA_ORC_123_Farrok_18_10"); //Ist doch voll schäbig.
     ai_output(self, other, "DIA_ORC_123_Farrok_18_11"); //Ha, ha. Was versteht ihr Jungspunde schon von Waffen. Na ja egal, hier hast du meinen Ring. Tod den Menschen, Krieger.
-    b_logentry(farrok_mission, "Ich habe Farrok das Schwert gebracht. Keine Ahnung, was der an dem schäbigen Teil findet. Dafür hat er mir seinen Ring gegeben.");
-    b_logentry(nurshak_mission, "Farrok hat mir seinen Ring gegeben.");
+    b_logentry(farrok_mission, farrok_mission_3);
+    b_logentry(nurshak_mission, nurshak_mission_7);
     log_settopicstatus(farrok_mission, log_success);
     mis_farrok = true;
     createinvitems(hero, itri_orcelitering, 1);
@@ -29509,7 +29573,7 @@ func int dia_orc_123_farrok_mission10_condition() {
 func void dia_orc_123_farrok_mission10_info() {
     ai_output(other, self, "DIA_ORC_123_Farrok_18_14"); //Schöne Grüße von deinem Bruder Sarrok.
     ai_output(self, other, "DIA_ORC_123_Farrok_18_15"); //Danke, Bumshak.
-    b_logentry(mission10, "Ich habe Farrok von seinem Bruder gegrüßt.");
+    b_logentry(mission10, mission10_2);
     log_settopicstatus(mission10, log_success);
     mis_10 = true;
     ai_stopprocessinfos(self);
@@ -29553,7 +29617,7 @@ func void dia_orc_143_goshakgar_info() {
     ai_output(self, other, "DIA_ORC_143_GoshakGar_18_00"); //AAAAARG! DU HAST MEINE BABYS GETÖTET! STIIIIRB!
     log_createtopic(mission4, log_mission);
     log_settopicstatus(mission4, log_running);
-    b_logentry(mission4, "Ich habe Goshak-Gar gefunden. Er ist völlig übergeschnappt. Ich werde ihn töten.");
+    b_logentry(mission4, mission4_2);
     info_clearchoices(dia_orc_143_goshakgar /*5439*/);
     info_addchoice(dia_orc_143_goshakgar /*5439*/, "NEIN! WARTE...", dia_orc_143_goshakgar_end);
 };
@@ -29629,7 +29693,7 @@ func void dia_orc_144_dieb_yet_info() {
     ai_output(other, self, "DIA_ORC_144_Dieb_18_04"); //Schweig. Ich werde jetzt Ur-Shak Bericht erstatten. Und du rührst dich nicht vom Fleck.
     ai_output(self, other, "DIA_ORC_144_Dieb_18_05"); //Ja, Bumshak (seufzt).
     ai_removeweapon(hero);
-    b_logentry(mission1, "Ich habe den Dieb auf frischer Tat ertappt. Ich sollte Ur-Shak Bescheid geben.");
+    b_logentry(mission1, mission1_2);
     mis_1_a = true;
     ai_stopprocessinfos(self);
 };
@@ -29671,7 +29735,7 @@ func void dia_orc_145_kind_info() {
     ai_output(self, other, "DIA_ORC_145_Kind_18_01"); //(Stottert) Ja...
     log_createtopic(mission8, log_mission);
     log_settopicstatus(mission8, log_running);
-    b_logentry(mission8, "Das Kind konnte aus der Höhle fliehen. Ich sollte den Vater aufsuchen.");
+    b_logentry(mission8, mission8_2);
     ai_stopprocessinfos(self);
     b_startotherroutine(self, "Flee");
 };
@@ -29741,7 +29805,7 @@ func void dia_orc_146_vater_mission8_info() {
     ai_output(other, self, "DIA_ORC_146_Vater_18_03"); //Keine Sorge. Ich werde ihn rausholen.
     log_createtopic(mission8, log_mission);
     log_settopicstatus(mission8, log_running);
-    b_logentry(mission8, "Der Sohn eines Kriegers ist von Untoten entführt und in die Höhle unter dem Steinkreis geschleppt worden. Ich soll ihn dort rausholen.");
+    b_logentry(mission8, mission8_1);
     ai_stopprocessinfos(self);
 };
 
@@ -29765,7 +29829,7 @@ func int dia_orc_146_vater_mission8_solve_condition() {
 func void dia_orc_146_vater_mission8_solve_info() {
     ai_output(other, self, "DIA_ORC_146_Vater_18_04"); //Dein Kind ist frei.
     ai_output(self, other, "DIA_ORC_146_Vater_18_05"); //Tausend Dank. Du bist bestimmt verletzt. Nimm diesen Heiltrank.
-    b_logentry(mission8, "Ich habe das Kind gerettet. Es ist jetzt wieder bei seinem Vater.");
+    b_logentry(mission8, mission8_3);
     log_settopicstatus(mission8, log_success);
     createinvitems(hero, itpo_health_addon_04, 1);
     mis_8 = true;
@@ -29810,7 +29874,7 @@ func void dia_orc_147_workash_mission9_info() {
     ai_output(other, self, "DIA_ORC_147_Workash_18_02"); //Okay, ich werde dir deine Statue zurückbringen.
     log_createtopic(mission9, log_mission);
     log_settopicstatus(mission9, log_running);
-    b_logentry(mission9, "Ich soll einem Schamanen seine Statue zurückbringen. Sie wurde von den Skeletten in der Mine geklaut.");
+    b_logentry(mission9, mission9_1);
     ai_stopprocessinfos(self);
 };
 
@@ -29834,7 +29898,7 @@ func int dia_orc_147_workash_mission9_solve_condition() {
 func void dia_orc_147_workash_mission9_solve_info() {
     ai_output(other, self, "DIA_ORC_147_Workash_18_03"); //Hier hast du deine Statue.
     ai_output(self, other, "DIA_ORC_147_Workash_18_04"); //Meine Statue! Vielen Dank! Dafür schenke ich dir diesen schönen Goldbrocken. Sie sind hier im Minental sehr selten.
-    b_logentry(mission9, "Ich habe dem Schamanen seine Statue gebracht. Als Belohnung hat er mir einen Goldbrocken geschenkt.");
+    b_logentry(mission9, mission9_2);
     log_settopicstatus(mission9, log_success);
     npc_removeinvitems(hero, itmi_schatz, 1);
     createinvitems(hero, itmi_bakgld, 1);
@@ -29882,7 +29946,7 @@ func void dia_orc_148_sarrok_mission10_info() {
     ai_output(other, self, "DIA_ORC_148_Sarrok_18_01"); //Ehm...okay.
     log_createtopic(mission10, log_mission);
     log_settopicstatus(mission10, log_running);
-    b_logentry(mission10, "Ich soll Farrok in der Burg von seinem Bruder Sarrok grüßen.");
+    b_logentry(mission10, mission10_1);
     ai_stopprocessinfos(self);
 };
 
@@ -29931,7 +29995,7 @@ func void dia_orc_151_narkash_mission1_info() {
     ai_output(other, self, "DIA_ORC_151_Narkash_Mission1_18_06"); //Ich werde dich nicht entäuschen Narkash.
     log_createtopic(narkash_mission1, log_mission);
     log_settopicstatus(narkash_mission1, log_running);
-    b_logentry(narkash_mission1, "Narkash hat mich beauftragt, zehn mal rohes Fleisch zu beschaffen. In der Nähe treiben sich Beisser rum, die köstliches Fleisch haben.");
+    b_logentry(narkash_mission1, narkash_mission1_1);
     ai_stopprocessinfos(self);
     b_bumshak_episode_1(hero);
 };
@@ -29956,7 +30020,7 @@ func int dia_orc_151_narkash_mission1_solve_condition() {
 func void dia_orc_151_narkash_mission1_solve_info() {
     ai_output(other, self, "DIA_ORC_151_Narkash_Mission1_18_07"); //Ich habe die Beisser getötet und bringe dir ihr Fleisch.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission1_18_08"); //Gut. Ihr Fleisch wird unsere Horde stärken. Komme wieder, wenn du bereit für die nächste Aufgabe bist.
-    b_logentry(narkash_mission1, "Ich habe die Beisser getötet und die Horde mit Fleisch versorgt.");
+    b_logentry(narkash_mission1, narkash_mission1_2);
     log_settopicstatus(narkash_mission1, log_success);
     mis_narkash_mission1 = true;
     npc_removeinvitems(hero, itfo_muttonraw, 10);
@@ -29998,7 +30062,7 @@ func void dia_orc_151_narkash_mission2_yes() {
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission2_18_09"); //Genauso ist es. Und nun mach dich auf die Suche.
     log_createtopic(narkash_mission2, log_mission);
     log_settopicstatus(narkash_mission2, log_running);
-    b_logentry(narkash_mission2, "Narkash hat mich beauftragt, zehn Heilpflanzen für den Schamanen zu beschaffen. Narkash riet mir, entlang der Palisade zu suchen. Für die Horde!");
+    b_logentry(narkash_mission2, narkash_mission2_1);
     ai_stopprocessinfos(self);
 };
 
@@ -30008,7 +30072,7 @@ func void dia_orc_151_narkash_mission2_no() {
     ai_stopprocessinfos(self);
     log_createtopic(narkash_mission2, log_mission);
     log_settopicstatus(narkash_mission2, log_running);
-    b_logentry(narkash_mission2, "Narkash hat mich beauftragt, zehn Heilpflanzen für den Schamanen zu beschaffen. Narkash riet mir, entlang der Palisade zu suchen. Sowas blödes! Ich bin doch nicht zum Kräutersammeln da. Ich will Menschenschädel spalten.");
+    b_logentry(narkash_mission2, narkash_mission2_2);
     ai_stopprocessinfos(self);
 };
 
@@ -30033,7 +30097,7 @@ func void dia_orc_151_narkash_mission2_solve_info() {
     ai_output(other, self, "DIA_ORC_151_Narkash_Mission2_18_12"); //Ich habe die zehn Heilpflanzen besorgt.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission2_18_13"); //Ausgezeichnet. Sie werden unseren Brüdern neue Kraft für den Kampf gegen die Menschen geben. Du leistest der Horde wertvolle Hilfe, Bumshak.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission2_18_14"); //Komme wieder, wenn du bereit für die nächste Aufgabe bist.
-    b_logentry(narkash_mission2, "Ich habe die zehn Heilpflanzen besorgt. Mögen sie unseren Brüdern im Krieg gegen die Menschen neue Kraft schenken.");
+    b_logentry(narkash_mission2, narkash_mission2_3);
     log_settopicstatus(narkash_mission2, log_success);
     mis_narkash_mission2 = true;
     npc_removeinvitems(hero, itpl_herb, 10);
@@ -30063,7 +30127,7 @@ func void dia_orc_151_narkash_mission3_info() {
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission3_18_02"); //Wahrscheinlich ist er hoch in die Berge gelaufen. Finde ihn und bringe ihn zu Bogg. Bogg ist der Krieger auf der Brücke.
     log_createtopic(narkash_mission3, log_mission);
     log_settopicstatus(narkash_mission3, log_running);
-    b_logentry(narkash_mission3, "Der Warg Bubba ist verschwunden. Er hat einen Beisser verfolgt und ist nicht wieder zurück gekehrt. Ich soll ihn finden und sicher ins Lager zurück bringen.");
+    b_logentry(narkash_mission3, narkash_mission3_1);
     ai_stopprocessinfos(self);
     wld_insertnpc(orc_156_bubba /*5128*/, "PLATEAU_ROUND02_CAVE_MOVE");
     b_initnpcglobals();
@@ -30091,7 +30155,7 @@ func void dia_orc_151_narkash_mission3_solve_info() {
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission3_18_04"); //Dumm wie Stroh! Aber an der Front sind sie unbezahlbar. Du hast der Horde erneut einen großen Dienst erwiesen, Bumshak.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission3_18_05"); //Der Meister schätzt Loyalität. Mache so weiter und deine Zukunft wird großartig sein.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission3_18_06"); //Komme wieder, wenn du bereit für weitere Prüfungen bist.
-    b_logentry(narkash_mission3, "Ich habe Narkash erzählt, dass ich Bubba gefunden habe. Er war sehr erfreut.");
+    b_logentry(narkash_mission3, narkash_mission3_3);
     log_settopicstatus(narkash_mission3, log_success);
     mis_narkash_mission3 = true;
     ai_stopprocessinfos(self);
@@ -30120,7 +30184,7 @@ func void dia_orc_151_narkash_mission4_info() {
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission4_18_02"); //Er ist zu den Höhlen bei der Burg gegangen. Finde seine Leiche, bringe mir seine Axt und stelle so die Ehre der Horde wieder her.
     log_createtopic(narkash_mission4, log_mission);
     log_settopicstatus(narkash_mission4, log_running);
-    b_logentry(narkash_mission4, "Narkash hat mich beauftragt, die Axt von Gash-Pak zu bergen. Seine Leiche muss irgendwo in einer Höhle bei der Burg liegen.");
+    b_logentry(narkash_mission4, narkash_mission4_1);
     ai_stopprocessinfos(self);
     wld_insertnpc(orc_153_gashpak /*5122*/, "LOCATION_15_IN_2");
     b_killnpc(orc_153_gashpak /*5122*/);
@@ -30147,7 +30211,7 @@ func void dia_orc_151_narkash_mission4_solve_info() {
     ai_output(other, self, "DIA_ORC_151_Narkash_Mission4_18_03"); //Ich habe die Axt von Gash-Pak geborgen.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission4_18_04"); //Sehr gut. Die Ehre der Horde ist dank dir wiederhergestellt. Du bist nun würdig, die letzte Prüfung auf dich zu nehmen.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission4_18_05"); //Komme wieder, wenn du bereit bist.
-    b_logentry(narkash_mission4, "Ich habe Gash-Paks Axt geborgen und seine Ehre wiederhergestellt.");
+    b_logentry(narkash_mission4, narkash_mission4_2);
     log_settopicstatus(narkash_mission4, log_success);
     mis_narkash_mission4 = true;
     npc_removeinvitems(hero, itmw_2h_gashpaksaxe, 1);
@@ -30179,8 +30243,8 @@ func void dia_orc_151_narkash_mission5_info() {
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission5_18_04"); //Töte diese Tiere und bringe mir die drei Bestandteile. Vielleicht hast du ja bereits welche erbeutet.
     log_createtopic(narkash_mission5, log_mission);
     log_settopicstatus(narkash_mission5, log_running);
-    b_logentry(narkash_mission5, "Um in den Stand der Krieger erhoben zu werden, muss ich ein KULU-MULU mein eigen nennen.");
-    b_logentry(narkash_mission5, "Die drei Bestandteile eines KULU-MULUS sind: die Zähne eines jungen Bluthundes, die Krallen eines Snappers und die Zangen eines Minecrawlers. Wenn ich alle drei Bestandteile habe, soll ich mich bei Narkash melden.");
+    b_logentry(narkash_mission5, narkash_mission5_1);
+    b_logentry(narkash_mission5, narkash_mission5_2);
     ai_stopprocessinfos(self);
 };
 
@@ -30208,7 +30272,7 @@ func void dia_orc_151_narkash_mission5_solve_info() {
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission5_18_08"); //Melde dich beim Kriegsherren Nur-Shak. Er steht genau vor dem Tor der Burg. Du erkennst ihn an der Axt.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission5_18_09"); //Viel Glück, Bumshak. Für die Horde.
     ai_output(other, self, "DIA_ORC_151_Narkash_Mission5_18_10"); //Für die Horde, Narkash.
-    b_logentry(narkash_mission5, "Ich habe alle Bestandteile des KULU-MULU besorgt. Ich bin nun ein Krieger. Ich kann es gar nicht abwarten, endlich meinen Brüdern im Krieg gegen die Menschen zur Seite stehen zu dürfen.");
+    b_logentry(narkash_mission5, narkash_mission5_3);
     log_settopicstatus(narkash_mission5, log_success);
     mis_narkash_mission5 = true;
     npc_removeinvitems(hero, itat_claw, 1);
@@ -30216,7 +30280,7 @@ func void dia_orc_151_narkash_mission5_solve_info() {
     npc_removeinvitems(hero, itat_crawlermandibles, 1);
     log_createtopic(nurshak_mission, log_mission);
     log_settopicstatus(nurshak_mission, log_running);
-    b_logentry(nurshak_mission, "Ich soll zur Burg der Menschen aufbrechen. Angeblich steht der Sturm kurz bevor. Dort soll ich mich beim Kriegsherren Nur-Shak melden. Er steht genau vor dem Tor der Burg. Ich erkenne ihn an der Axt.");
+    b_logentry(nurshak_mission, nurshak_mission_8);
     ai_stopprocessinfos(self);
     b_bumshak_episode_2(hero);
 };
@@ -30381,7 +30445,7 @@ func int dia_orc_155_bogg_bubba_condition() {
 func void dia_orc_155_bogg_bubba_info() {
     ai_output(self, other, "DIA_ORC_155_Bogg_18_02"); //Du hast Bubba gefunden. Gute Arbeit, Bumshak. Ich werde mich um ihn kümmern.
     ai_output(other, self, "DIA_ORC_155_Bogg_18_03"); //Danke, Bogg.
-    b_logentry(narkash_mission3, "Ich habe Bubba gefunden. Ich sollte Narkash Meldung erstatten.");
+    b_logentry(narkash_mission3, narkash_mission3_2);
     ai_stopprocessinfos(self);
     b_initnpcglobals();
     bumshak_bubba_solved = true;
@@ -30564,7 +30628,7 @@ func void dia_orc_158_horanakk_info() {
     ai_output(self, other, "DIA_ORC_158_Horanakk_18_03"); //Durkash, sagst du? Hm, ich kenne ihn schon sehr lange. Stark und geschickt, aber er läßt sich zu sehr von seinem Hass leiten.
     ai_output(self, other, "DIA_ORC_158_Horanakk_18_04"); //Überbringe ihm diesen Glücksbringer. Er wird ihm helfen, in der Schlacht niemals mutlos zu sein. Mögen unsere Ahnen uns beistehen.
     ai_output(other, self, "DIA_ORC_158_Horanakk_18_05"); //Vielen Dank, ehrwürdiger Ho'Ra-Nakk.
-    b_logentry(durkash_mission, "Ich habe mit Ho'Ra-Nakk gesprochen. Er hat mir einen Glücksbringer für Durkash mitgegeben. Er wird Durkash helfen, in der Schlacht niemals mutlos zu sein.");
+    b_logentry(durkash_mission, durkash_mission_2);
     createinvitems(hero, itmi_gluecksbringer, 1);
     ai_stopprocessinfos(self);
 };
@@ -30657,7 +30721,7 @@ func void dia_orc_169_burrok_mission11_info() {
     ai_output(other, self, "DIA_ORC_169_Burrok_18_08"); //Gut, ich werde sehen, ob ich ein Schafsfell für dich finde.
     log_createtopic(mission11, log_mission);
     log_settopicstatus(mission11, log_running);
-    b_logentry(mission11, "Die Elite Burrok aus unserem alten Dorf hätte gerne ein Schafsfell.");
+    b_logentry(mission11, mission11_1);
     ai_stopprocessinfos(self);
 };
 
@@ -30681,7 +30745,7 @@ func int dia_orc_169_burrok_mission11_solve_condition() {
 func void dia_orc_169_burrok_mission11_solve_info() {
     ai_output(other, self, "DIA_ORC_169_Burrok_18_09"); //Ich habe hier ein weiches und sauberes Schafsfell für dich.
     ai_output(self, other, "DIA_ORC_169_Burrok_18_10"); //Perfekt! Fühl mal. Spürst du den Unterschied? Vielen Dank! Hier hast du die versprochenen Goldbrocken.
-    b_logentry(mission11, "Ich habe Burrok das Schafsfell gebracht. Als Belohnung hat er mir zwei Goldbrocken geschenkt.");
+    b_logentry(mission11, mission11_2);
     log_settopicstatus(mission11, log_success);
     npc_removeinvitems(hero, itat_sheepfur, 1);
     createinvitems(hero, itmi_bakgld, 2);
