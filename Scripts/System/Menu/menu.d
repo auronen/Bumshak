@@ -226,6 +226,34 @@ class c_menu {
 };
 
 prototype c_menu_item_def(c_menu_item) {
+    	fontName 		= 	MENU_FONT_DEFAULT;
+	text			=	"";
+	alphaMode		=	"BLEND";
+	alpha			=	254;			// NOTE: Must be under 255 to support chroma keying, chroma color is black
+	type			=	MENU_ITEM_TEXT;
+	posx			=	0;
+	posy			=	0;
+	dimx			=	-1;			// -1 = AUTODETECT
+	dimy			=	-1;			// -1 = AUTODETECT
+	flags			=	IT_CHROMAKEYED|IT_TRANSPARENT|IT_SELECTABLE;
+	
+	openDelayTime	=	0;
+	openDuration	=	-1;	
+	
+	sizeStartScale  = 	1;
+	
+	userFloat[0]    =	100;	
+	userFloat[1]	=	200;
+	
+	onSelAction[0]				= 	SEL_ACTION_BACK;
+	onChgSetOption  			=	"";
+	onChgSetOptionSection 		= "INTERNAL";
+	hideIfOptionSectionSet		= "";
+	hideIfOptionSet				= "";
+	hideOnValue					= -1;
+	
+	frameSizeX		= 0;
+	frameSizeY		= 0;
 };
 
 prototype c_menu_def(c_menu) {
@@ -233,7 +261,7 @@ prototype c_menu_def(c_menu) {
     posy = 0;
     dimx = 8191;
     dimy = 8191;
-    alpha = menu_item_inp_lockfocus /*254*/;
+    alpha = 254;
     items = "ITEM_BACK";
     flags = (menu_exclusive | menu_dontscale_dim) | menu_align_center;
     eventtimermsec = 1000;
@@ -346,19 +374,19 @@ instance menuitem_main_headline2(c_menu_item_def) {
     dimx = 5900;
     dimy = 1800;
     alphamode = "BLEND";
-    alpha = menu_item_inp_quickmana /*255*/;
+    alpha = 255;
     flags = flags | it_txt_center;
     flags = flags & (~it_selectable);
 };
 
 instance menuitem_main_headline(c_menu_item_def) {
     backpic = "";
-    posx = menu_item_inp_weapon_parade /*250*/;
+    posx = 250;
     posy = 500;
     dimx = 7900;
     dimy = 2300;
     alphamode = "BLEND";
-    alpha = menuitem_audio_reverb /*220*/;
+    alpha = 220;
     flags = flags | it_txt_center;
     flags = flags & (~it_selectable);
 };
@@ -494,7 +522,7 @@ instance menuitem_perf_choice(c_menu_item_def) {
     posx = 4100 - 2000;
     posy = (menu_opt_start_y + (menu_opt_dy * 6)) + 650;
     dimx = 4000;
-    dimy = menuitem_save_slot14 /*350*/;
+    dimy = 350;
     onchgsetoption = "perfQualityIndex";
     onchgsetoptionsection = "INTERNAL";
     flags = flags & (~it_selectable);
@@ -505,7 +533,7 @@ instance menuitem_opt_back(c_menu_item_def) {
     backpic = menu_item_back_pic;
     text = "Zurück";
     posx = 1000;
-    posy = menu_back_y + menuitem_ext_waterfade /*300*/;
+    posy = menu_back_y + 300;
     dimx = 6192;
     dimy = menu_opt_dy;
     onselaction = sel_action_back;
@@ -916,7 +944,7 @@ instance menuitem_gra_back(c_menu_item_def) {
     backpic = menu_item_back_pic;
     text = "Zurück";
     posx = 1000;
-    posy = menu_back_y + menuitem_ext_waterfade /*300*/;
+    posy = menu_back_y + 300;
     dimx = 6192;
     dimy = menu_dy;
     onselaction = sel_action_back;
@@ -1428,7 +1456,7 @@ instance menu_item_nextmenu(c_menu_item_def) {
     text[1] = "weitere Gothic 2 Tasten festlegen";
     posx = ctrl_sp1_1 + 2500;
     posy = (ctrl_y_start + (ctrl_y_step * 21)) + ctrl_group6;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     onselaction_s = "MENU_OPT_CONTROLS_EXTKEYS";
     onselaction = sel_action_startmenu;
@@ -1533,7 +1561,7 @@ instance menu_item_inp_weapon_left(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 1)) + ctrl_group2;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyActionLeft";
@@ -1550,7 +1578,7 @@ instance menu_item_inp_weapon_right(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 2)) + ctrl_group2;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyActionRight";
@@ -1567,7 +1595,7 @@ instance menu_item_inp_weapon_parade(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 3)) + ctrl_group2;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyParade";
@@ -1626,7 +1654,7 @@ instance menu_item_inp_lockfocus(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 4)) + ctrl_group2;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyLockTarget";
@@ -1643,7 +1671,7 @@ instance menu_item_inp_quickmana(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 5)) + ctrl_group2;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyPotion";
@@ -1660,7 +1688,7 @@ instance menu_item_inp_quickhealth(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 6)) + ctrl_group2;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyHeal";
@@ -1887,7 +1915,7 @@ instance menu_item_inp_up(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 0)) + ctrl_group1;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     onchgsetoption = "keyUp";
     onchgsetoptionsection = "KEYS";
@@ -1900,7 +1928,7 @@ instance menu_item_inp_down(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 1)) + ctrl_group1;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyDown";
@@ -1914,7 +1942,7 @@ instance menu_item_inp_left(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 2)) + ctrl_group1;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyLeft";
@@ -1928,7 +1956,7 @@ instance menu_item_inp_right(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 3)) + ctrl_group1;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyRight";
@@ -1942,7 +1970,7 @@ instance menu_item_inp_strafe_left(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 4)) + ctrl_group1;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyStrafeLeft";
@@ -1956,7 +1984,7 @@ instance menu_item_inp_strafe_right(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 5)) + ctrl_group1;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyStrafeRight";
@@ -1970,7 +1998,7 @@ instance menu_item_inp_jumpclimbstrafe(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 6)) + ctrl_group1;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keySMove";
@@ -1984,7 +2012,7 @@ instance menu_item_inp_runmodetoggle(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 7)) + ctrl_group1;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keySlow";
@@ -1998,7 +2026,7 @@ instance menu_item_inp_sneak(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 8)) + ctrl_group1;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keySneak";
@@ -2012,7 +2040,7 @@ instance menu_item_inp_action(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 9)) + ctrl_group2;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyAction";
@@ -2026,7 +2054,7 @@ instance menu_item_inp_weapon(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 10)) + ctrl_group2;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyWeapon";
@@ -2040,7 +2068,7 @@ instance menu_item_inp_map(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 11)) + ctrl_group2;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyShowMap";
@@ -2054,7 +2082,7 @@ instance menu_item_inp_look(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 14)) + ctrl_group3;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyLook";
@@ -2068,7 +2096,7 @@ instance menu_item_inp_look_fp(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 15)) + ctrl_group3;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyLookFP";
@@ -2082,7 +2110,7 @@ instance menu_item_inp_inventory(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 16)) + ctrl_group4;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyInventory";
@@ -2096,7 +2124,7 @@ instance menu_item_inp_screen_status(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 17)) + ctrl_group4;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyShowStatus";
@@ -2110,7 +2138,7 @@ instance menu_item_inp_screen_log(c_menu_item_def) {
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 18)) + ctrl_group4;
     dimx = ctrl_dimx;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     backpic = menu_kbdinput_back_pic;
     onchgsetoption = "keyShowLog";
@@ -2123,7 +2151,7 @@ instance menu_item_chg_keys_set_default(c_menu_item_def) {
     text[1] = "Aktiviert die Standardbelegung.";
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 19)) + ctrl_group5;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     onselaction = sel_action_execcommands;
     onselaction_s = "SETDEFAULT";
     fontname = menu_font_small;
@@ -2135,7 +2163,7 @@ instance menu_item_chg_keys_set_alternative(c_menu_item_def) {
     text[1] = "Aktiviert eine alternative Standardbelegung.";
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 20)) + ctrl_group5;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     onselaction = sel_action_execcommands;
     onselaction_s = "SETALTERNATIVE";
     fontname = menu_font_small;
@@ -2147,7 +2175,7 @@ instance menuitem_chg_keys_back(c_menu_item_def) {
     text = "Zurück";
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 21)) + ctrl_group6;
-    dimy = menuitem_ext_waterfade /*300*/;
+    dimy = 300;
     fontname = menu_font_small;
     onselaction = sel_action_back;
     flags = flags | it_txt_center;
@@ -2553,7 +2581,7 @@ instance menuitem_loadsave_levelname_value(c_menu_item_def) {
     posx = savegame_x2;
     posy = 3960 + 320;
     dimx = 8192 - posx;
-    dimy = menuitem_save_slot14 /*350*/;
+    dimy = 350;
     fontname = menu_font_small;
     flags = flags & (~it_selectable);
 };
@@ -2573,7 +2601,7 @@ instance menuitem_loadsave_datetime_value(c_menu_item_def) {
     posx = savegame_x2;
     posy = 4900 + 320;
     dimx = 8192 - posx;
-    dimy = menuitem_save_slot14 /*350*/;
+    dimy = 350;
     fontname = menu_font_small;
     flags = flags & (~it_selectable);
 };
@@ -2593,7 +2621,7 @@ instance menuitem_loadsave_gametime_value(c_menu_item_def) {
     posx = savegame_x2;
     posy = 6200 + 320;
     dimx = 8192 - posx;
-    dimy = menuitem_save_slot14 /*350*/;
+    dimy = 350;
     fontname = menu_font_small;
     flags = flags & (~it_selectable);
 };
@@ -2604,7 +2632,7 @@ instance menuitem_loadsave_playtime_value(c_menu_item_def) {
     posx = savegame_x2;
     posy = 6200 + (320 * 2);
     dimx = 8192 - posx;
-    dimy = menuitem_save_slot14 /*350*/;
+    dimy = 350;
     fontname = menu_font_small;
     flags = flags & (~it_selectable);
 };
@@ -3211,7 +3239,7 @@ instance menu_log(c_menu_def) {
     items[10] = "MENU_ITEM_LIST_MISSIONS_OLD";
     items[11] = "MENU_ITEM_LIST_LOG";
     items[12] = "MENU_ITEM_CONTENT_VIEWER";
-    alpha = menu_item_inp_quickmana /*255*/;
+    alpha = 255;
     posx = 0;
     posy = 0;
     dimx = 8191;
@@ -3292,7 +3320,7 @@ instance menu_item_list_missions_act(c_menu_item_def) {
     flags = flags & (~it_selectable);
     flags = flags & (~it_txt_center);
     userstring = "CURRENTMISSIONS";
-    framesizex = menu_item_inp_weapon_parade /*250*/;
+    framesizex = 250;
     framesizey = 0;
 };
 
@@ -3308,7 +3336,7 @@ instance menu_item_list_missions_failed(c_menu_item_def) {
     flags = flags & (~it_selectable);
     flags = flags & (~it_txt_center);
     userstring = "OLDMISSIONS";
-    framesizex = menu_item_inp_weapon_parade /*250*/;
+    framesizex = 250;
     framesizey = 0;
 };
 
@@ -3324,7 +3352,7 @@ instance menu_item_list_missions_old(c_menu_item_def) {
     flags = flags & (~it_selectable);
     flags = flags & (~it_txt_center);
     userstring = "FAILEDMISSIONS";
-    framesizex = menu_item_inp_weapon_parade /*250*/;
+    framesizex = 250;
     framesizey = 0;
 };
 
@@ -3340,7 +3368,7 @@ instance menu_item_list_log(c_menu_item_def) {
     flags = flags & (~it_selectable);
     flags = flags & (~it_txt_center);
     userstring = "LOG";
-    framesizex = menu_item_inp_weapon_parade /*250*/;
+    framesizex = 250;
     framesizey = 0;
 };
 
@@ -3378,7 +3406,7 @@ instance menu_item_day(c_menu_item_def) {
     text = "XX.";
     posx = 1500;
     posy = 6000;
-    dimx = menuitem_ext_waterfade /*300*/;
+    dimx = 300;
     fontname = log_font_datetime;
     flags = flags & (~it_selectable);
 };
@@ -3393,7 +3421,7 @@ instance menu_item_time(c_menu_item_def) {
 
 instance menu_status(c_menu_def) {
     items = "MENU_ITEM_HISTORY";
-    alpha = menu_item_inp_quickmana /*255*/;
+    alpha = 255;
     posx = 0;
     posy = 0;
     dimx = 8191;
