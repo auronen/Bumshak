@@ -26874,7 +26874,7 @@ instance pc_hero(c_npc) {
 instance vlk_4101_waffenknecht(npc_default) {
     name = name_waffenknecht;
     guild = gil_mil;
-    id = spell_swarm /*4101*/;
+    id = 4101;
     voice = 1;
     level = 10;
     npctype = npctype_ocambient;
@@ -27042,7 +27042,7 @@ func void rtn_start_4108() {
 instance vlk_4109_waffenknecht(npc_default) {
     name = name_waffenknecht;
     guild = gil_mil;
-    id = spell_teleport /*4109*/;
+    id = 4109;
     voice = 6;
     level = 10;
     npctype = npctype_ocambient;

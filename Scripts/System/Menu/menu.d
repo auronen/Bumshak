@@ -48,6 +48,16 @@ const string log_font_datetime = "font_old_10_white_hi.tga";
 
 const string stat_font_default = "font_old_10_white.tga";
 
+const string MENU_NO_YES = "nein|ja";
+
+const string MENU_OFF_ON = "aus|an";
+
+const string MENU_BACK = "Zurück";
+
+const string CTRL_KEYDEF_INFO = "Gewünschte Taste betätigen.";
+
+const string CTRL_KEYDEF = "Taste ENTF zum Löschen und RETURN zum definieren";
+
 const int menu_slider_dx = 2000;
 
 const int menu_slider_dy = 600;
@@ -292,7 +302,7 @@ const int menu_main_y = 2500;
 
 instance menuitem_main_newgame(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Neues Spiel starten";
+    text[0] = "Neues Spiel starten";
     text[1] = "Ein neues Spiel beginnen.";
     posx = 0;
     posy = menu_main_y + (menu_main_dy * 0);
@@ -305,7 +315,7 @@ instance menuitem_main_newgame(c_menu_item_def) {
 
 instance menuitem_main_savegame_load(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Spiel laden";
+    text[0] = "Spiel laden";
     text[1] = "Einen gespeicherten Spielstand laden.";
     posx = 0;
     posy = menu_main_y + (menu_main_dy * 1);
@@ -318,7 +328,7 @@ instance menuitem_main_savegame_load(c_menu_item_def) {
 
 instance menuitem_main_savegame_save(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Spiel speichern";
+    text[0] = "Spiel speichern";
     text[1] = "Den aktuellen Spielstand speichern.";
     posx = 0;
     posy = menu_main_y + (menu_main_dy * 2);
@@ -331,7 +341,7 @@ instance menuitem_main_savegame_save(c_menu_item_def) {
 
 instance menuitem_main_resume(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Weiterspielen";
+    text[0] = "Weiterspielen";
     text[1] = "Aktuelles Spiel fortführen.";
     posx = 0;
     posy = menu_main_y + (menu_main_dy * 3);
@@ -343,7 +353,7 @@ instance menuitem_main_resume(c_menu_item_def) {
 
 instance menuitem_main_options(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Einstellungen";
+    text[0] = "Einstellungen";
     text[1] = "Spiel, Video, Audio und Tastatur einstellen";
     posx = 0;
     posy = menu_main_y + (menu_main_dy * 4);
@@ -356,7 +366,7 @@ instance menuitem_main_options(c_menu_item_def) {
 
 instance menuitem_main_exit(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Spiel beenden";
+    text[0] = "Spiel beenden";
     text[1] = "Das Spiel verlassen.";
     posx = 0;
     posy = menu_main_y + (menu_main_dy * 5);
@@ -413,7 +423,7 @@ const int menu_opt_dy = 600;
 const int menu_opt_start_y = 2000;
 
 instance menuitem_opt_heading(c_menu_item_def) {
-    text = "EINSTELLUNGEN";
+    text[0] = "EINSTELLUNGEN";
     type = menu_item_text;
     posx = 0;
     posy = menu_title_y;
@@ -424,7 +434,7 @@ instance menuitem_opt_heading(c_menu_item_def) {
 
 instance menuitem_opt_game(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Spiel";
+    text[0] = "Spiel";
     text[1] = "Diverse Spieleinstellungen vornehmen.";
     posx = 0;
     posy = menu_opt_start_y + (menu_opt_dy * 0);
@@ -437,7 +447,7 @@ instance menuitem_opt_game(c_menu_item_def) {
 
 instance menuitem_opt_graphics(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Grafik";
+    text[0] = "Grafik";
     text[1] = "Sichtweite, Details und Effekte.";
     posx = 0;
     posy = menu_opt_start_y + (menu_opt_dy * 1);
@@ -450,7 +460,7 @@ instance menuitem_opt_graphics(c_menu_item_def) {
 
 instance menuitem_opt_video(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Video";
+    text[0] = "Video";
     text[1] = "Grafikkarte, Auflösung und Helligkeit.";
     posx = 0;
     posy = menu_opt_start_y + (menu_opt_dy * 2);
@@ -463,7 +473,7 @@ instance menuitem_opt_video(c_menu_item_def) {
 
 instance menuitem_opt_audio(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Audio";
+    text[0] = "Audio";
     text[1] = "Musik, Sprache und Soundeffekte.";
     posx = 0;
     posy = menu_opt_start_y + (menu_opt_dy * 3);
@@ -476,7 +486,7 @@ instance menuitem_opt_audio(c_menu_item_def) {
 
 instance menuitem_opt_controls(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Steuerung";
+    text[0] = "Steuerung";
     text[1] = "Konfiguration der Tastenbelegung.";
     posx = 0;
     posy = menu_opt_start_y + (menu_opt_dy * 4);
@@ -489,7 +499,7 @@ instance menuitem_opt_controls(c_menu_item_def) {
 
 instance menuitem_opt_ext(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Erweitert";
+    text[0] = "Erweitert";
     text[1] = "Weitere Optionen";
     posx = 0;
     posy = menu_opt_start_y + (menu_opt_dy * 5);
@@ -502,7 +512,7 @@ instance menuitem_opt_ext(c_menu_item_def) {
 
 instance menuitem_perf(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Performance/Qualität";
+    text[0] = "Performance/Qualität";
     text[1] = "Optimierung von Performance und Qualität.";
     posx = 0;
     posy = menu_opt_start_y + (menu_opt_dy * 6);
@@ -516,7 +526,7 @@ instance menuitem_perf(c_menu_item_def) {
 
 instance menuitem_perf_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
-    text = "benutzerdefiniert#hohe Performance|mittlere Qualität|hohe Qualität";
+    text[0] = "benutzerdefiniert#hohe Performance|mittlere Qualität|hohe Qualität";
     type = menu_item_choicebox;
     fontname = menu_font_small;
     posx = 4100 - 2000;
@@ -531,7 +541,7 @@ instance menuitem_perf_choice(c_menu_item_def) {
 
 instance menuitem_opt_back(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Zurück";
+    text[0] = MENU_BACK;
     posx = 1000;
     posy = menu_back_y + 300;
     dimx = 6192;
@@ -567,7 +577,7 @@ instance menu_opt_game(c_menu_def) {
 };
 
 instance menuitem_game_headline(c_menu_item_def) {
-    text = "SPIEL EINSTELLUNGEN";
+    text[0] = "SPIEL EINSTELLUNGEN";
     type = menu_item_text;
     posx = 0;
     posy = menu_title_y;
@@ -578,7 +588,7 @@ instance menuitem_game_headline(c_menu_item_def) {
 
 instance menuitem_game_sub_titles(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Untertitel";
+    text[0] = "Untertitel";
     text[1] = "Visuelle Einblendung von Dialogen.";
     posx = 1000;
     posy = menu_start_y + (menu_sound_dy * 0);
@@ -591,7 +601,7 @@ instance menuitem_game_sub_titles(c_menu_item_def) {
 instance menuitem_game_sub_titles_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_sound_dy * 0)) + menu_choice_yplus;
@@ -605,7 +615,7 @@ instance menuitem_game_sub_titles_choice(c_menu_item_def) {
 
 instance menuitem_game_fightfocus(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Kampf Fokus";
+    text[0] = "Kampf Fokus";
     text[1] = "Grad der Darstellung des Kampffokus";
     posx = 1000;
     posy = menu_start_y + (menu_sound_dy * 1);
@@ -618,7 +628,7 @@ instance menuitem_game_fightfocus(c_menu_item_def) {
 instance menuitem_game_fightfocus_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "kein|Quadrat|aufhellen|beides";
+    text[0] = "kein|Quadrat|aufhellen|beides";
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_sound_dy * 1)) + menu_choice_yplus;
@@ -632,7 +642,7 @@ instance menuitem_game_fightfocus_choice(c_menu_item_def) {
 
 instance menuitem_game_interactfocus(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Interakt. Fokus";
+    text[0] = "Interakt. Fokus";
     text[1] = "Grad der Darstellung des Interaktions-Fokus";
     posx = 1000;
     posy = menu_start_y + (menu_sound_dy * 2);
@@ -645,7 +655,7 @@ instance menuitem_game_interactfocus(c_menu_item_def) {
 instance menuitem_game_interactfocus_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_sound_dy * 2)) + menu_choice_yplus;
@@ -659,7 +669,7 @@ instance menuitem_game_interactfocus_choice(c_menu_item_def) {
 
 instance menuitem_game_lookaround_inverse(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Umschau umkehren";
+    text[0] = "Umschau umkehren";
     text[1] = "Inverse Kamerasteuerung.";
     posx = 1000;
     posy = menu_start_y + (menu_sound_dy * 3);
@@ -672,7 +682,7 @@ instance menuitem_game_lookaround_inverse(c_menu_item_def) {
 instance menuitem_game_lookaround_inverse_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_sound_dy * 3)) + menu_choice_yplus;
@@ -686,7 +696,7 @@ instance menuitem_game_lookaround_inverse_choice(c_menu_item_def) {
 
 instance menuitem_m(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Maus";
+    text[0] = "Maus";
     text[1] = "Aktiviert eine Maussteuerung";
     posx = 1000;
     posy = menu_start_y + (menu_sound_dy * 4);
@@ -699,7 +709,7 @@ instance menuitem_m(c_menu_item_def) {
 instance menuitem_m_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "aus|an";
+    text[0] = MENU_OFF_ON;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_sound_dy * 4)) + menu_choice_yplus;
@@ -713,7 +723,7 @@ instance menuitem_m_choice(c_menu_item_def) {
 
 instance menuitem_msensitivity(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Maus Empfindlichk.";
+    text[0] = "Maus Empfindlichk.";
     text[1] = "";
     posx = 1000;
     posy = menu_start_y + (menu_sound_dy * 5);
@@ -726,7 +736,7 @@ instance menuitem_msensitivity(c_menu_item_def) {
 instance menuitem_msensitivity_slider(c_menu_item_def) {
     backpic = menu_slider_back_pic;
     type = menu_item_slider;
-    text = "";
+    text[0] = "";
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_sound_dy * 5)) + menu_slider_yplus;
@@ -742,7 +752,7 @@ instance menuitem_msensitivity_slider(c_menu_item_def) {
 
 instance menuitem_game_oldcontrols(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Gothic 1 controls";
+    text[0] = "Gothic 1 controls";
     text[1] = "Alte Steuerung im Kampf aktivieren";
     posx = 1000;
     posy = menu_start_y + (menu_sound_dy * 6);
@@ -755,7 +765,7 @@ instance menuitem_game_oldcontrols(c_menu_item_def) {
 instance menuitem_game_oldcontrols_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "aus|an";
+    text[0] = MENU_OFF_ON;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_sound_dy * 6)) + menu_choice_yplus;
@@ -769,7 +779,7 @@ instance menuitem_game_oldcontrols_choice(c_menu_item_def) {
 
 instance menuitem_game_back(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Zurück";
+    text[0] = MENU_BACK;
     posx = 1000;
     posy = menu_back_y;
     dimx = 6192;
@@ -796,7 +806,7 @@ instance menu_opt_graphics(c_menu_def) {
 };
 
 instance menuitem_gra_headline(c_menu_item_def) {
-    text = "GRAFIK EINSTELLUNGEN";
+    text[0] = "GRAFIK EINSTELLUNGEN";
     type = menu_item_text;
     posx = 0;
     posy = menu_title_y;
@@ -807,7 +817,7 @@ instance menuitem_gra_headline(c_menu_item_def) {
 
 instance menuitem_gra_texqual(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Textur Details";
+    text[0] = "Textur Details";
     text[1] = "Detailstufe der Texturen.";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 0);
@@ -834,7 +844,7 @@ instance menuitem_gra_texqual_slider(c_menu_item_def) {
 
 instance menuitem_gra_model_detail(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Modell Details";
+    text[0] = "Modell Details";
     text[1] = "Detailstufe von Objekten.";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 1);
@@ -861,7 +871,7 @@ instance menuitem_gra_model_detail_slider(c_menu_item_def) {
 
 instance menuitem_gra_sight(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Sichtweite";
+    text[0] = "Sichtweite";
     text[1] = "Regelung der Sichtweite in Prozent.";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 2);
@@ -874,7 +884,7 @@ instance menuitem_gra_sight(c_menu_item_def) {
 instance menuitem_gra_sight_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "20%|40%|60%|80%|100%|120%|140%|160%|180%|200%|220%|240%|260%|280%|300%";
+    text[0] = "20%|40%|60%|80%|100%|120%|140%|160%|180%|200%|220%|240%|260%|280%|300%";
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 2)) + menu_choice_yplus;
@@ -888,7 +898,7 @@ instance menuitem_gra_sight_choice(c_menu_item_def) {
 
 instance menuitem_vob_sight(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Sichtweite Obj";
+    text[0] = "Sichtweite Obj";
     text[1] = "Regelung der Objekt Sichtweite in Prozent";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 3);
@@ -901,7 +911,7 @@ instance menuitem_vob_sight(c_menu_item_def) {
 instance menuitem_vob_sight_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "20%|40%|60%|80%|100%|120%|140%|160%|180%|200%|220%|240%|260%|280%|300%";
+    text[0] = "20%|40%|60%|80%|100%|120%|140%|160%|180%|200%|220%|240%|260%|280%|300%";
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 3)) + menu_choice_yplus;
@@ -915,7 +925,7 @@ instance menuitem_vob_sight_choice(c_menu_item_def) {
 
 instance menuitem_gra_sky_effects(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Himmeleffekte";
+    text[0] = "Himmeleffekte";
     text[1] = "Himmeleffekte an- bzw. abschalten.";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 4);
@@ -928,7 +938,7 @@ instance menuitem_gra_sky_effects(c_menu_item_def) {
 instance menuitem_gra_sky_effects_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 4)) + menu_choice_yplus;
@@ -942,7 +952,7 @@ instance menuitem_gra_sky_effects_choice(c_menu_item_def) {
 
 instance menuitem_gra_back(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Zurück";
+    text[0] = MENU_BACK;
     posx = 1000;
     posy = menu_back_y + 300;
     dimx = 6192;
@@ -969,7 +979,7 @@ instance menu_opt_video(c_menu_def) {
 };
 
 instance menuitem_vid_headline(c_menu_item_def) {
-    text = "VIDEO EINSTELLUNGEN";
+    text[0] = "VIDEO EINSTELLUNGEN";
     type = menu_item_text;
     posx = 0;
     posy = menu_title_y;
@@ -980,7 +990,7 @@ instance menuitem_vid_headline(c_menu_item_def) {
 
 instance menuitem_vid_device(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Grafikkarte";
+    text[0] = "Grafikkarte";
     text[1] = "Gothic muss für diese Option neu gestartet werden!";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 0);
@@ -991,7 +1001,7 @@ instance menuitem_vid_device(c_menu_item_def) {
 };
 
 instance menuitem_vid_device_choice(c_menu_item_def) {
-    text = "";
+    text[0] = "";
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
     fontname = menu_font_small;
@@ -1008,7 +1018,7 @@ instance menuitem_vid_device_choice(c_menu_item_def) {
 
 instance menuitem_vid_resolution(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Auflösung";
+    text[0] = "Auflösung";
     text[1] = "Gewählte Auflösung durch RETURN bestätigen.";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 1);
@@ -1020,7 +1030,7 @@ instance menuitem_vid_resolution(c_menu_item_def) {
 };
 
 instance menuitem_vid_resolution_choice(c_menu_item_def) {
-    text = "";
+    text[0] = "";
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
     fontname = menu_font_small;
@@ -1036,7 +1046,7 @@ instance menuitem_vid_resolution_choice(c_menu_item_def) {
 
 instance menuitem_vid_brightness(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Helligkeit";
+    text[0] = "Helligkeit";
     text[1] = "Helligkeit";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 3);
@@ -1062,7 +1072,7 @@ instance menuitem_vid_brightness_slider(c_menu_item_def) {
 
 instance menuitem_vid_contrast(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Kontrast";
+    text[0] = "Kontrast";
     text[1] = "Kontrast";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 4);
@@ -1088,7 +1098,7 @@ instance menuitem_vid_contrast_slider(c_menu_item_def) {
 
 instance menuitem_vid_gamma(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Gamma";
+    text[0] = "Gamma";
     text[1] = "Gamma";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 5);
@@ -1114,7 +1124,7 @@ instance menuitem_vid_gamma_slider(c_menu_item_def) {
 
 instance menuitem_vid_back(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Zurück";
+    text[0] = MENU_BACK;
     posx = 1000;
     posy = menu_back_y;
     dimx = 6192;
@@ -1161,7 +1171,7 @@ const int menu_sound_dy = 550;
 
 instance menuitem_audio_headline(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "AUDIO EINSTELLUNGEN";
+    text[0] = "AUDIO EINSTELLUNGEN";
     type = menu_item_text;
     posx = 0;
     posy = menu_title_y;
@@ -1172,7 +1182,7 @@ instance menuitem_audio_headline(c_menu_item_def) {
 
 instance menuitem_audio_sfxvol(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Sound-Lautst.";
+    text[0] = "Sound-Lautst.";
     text[1] = "Lautstärke von Soundeffekten und Sprachausgabe.";
     posx = 1000;
     posy = menu_start_sound_y + (menu_sound_dy * 0);
@@ -1198,7 +1208,7 @@ instance menuitem_audio_sfxvol_slider(c_menu_item_def) {
 
 instance menuitem_audio_musicvol(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Musik-Lautst.";
+    text[0] = "Musik-Lautst.";
     text[1] = "Läutstärke der Hintergrundmusik.";
     posx = 1000;
     posy = menu_start_sound_y + (menu_sound_dy * 1);
@@ -1224,7 +1234,7 @@ instance menuitem_audio_musicvol_slider(c_menu_item_def) {
 
 instance menuitem_audio_music(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Musik";
+    text[0] = "Musik";
     text[1] = "Hintergrundmusik an- bzw. ausschalten.";
     posx = 1000;
     posy = menu_start_sound_y + (menu_sound_dy * 2);
@@ -1237,7 +1247,7 @@ instance menuitem_audio_music(c_menu_item_def) {
 instance menuitem_audio_music_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "aus|an";
+    text[0] = MENU_OFF_ON;
     fontname = menu_font_small;
     posx = 4300;
     posy = (menu_start_sound_y + (menu_sound_dy * 2)) + menu_choice_yplus;
@@ -1251,7 +1261,7 @@ instance menuitem_audio_music_choice(c_menu_item_def) {
 
 instance menuitem_audio_provider(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Soundprovider";
+    text[0] = "Soundprovider";
     text[1] = "Eine Änderung wirkt sich erst beim Neustart aus!";
     posx = 1000;
     posy = menu_start_sound_y + (menu_sound_dy * 3);
@@ -1264,7 +1274,7 @@ instance menuitem_audio_provider(c_menu_item_def) {
 instance menuitem_audio_provider_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "1|2|3|4|5";
+    text[0] = "1|2|3|4|5";
     fontname = menu_font_small;
     posx = 4300;
     posy = (menu_start_sound_y + (menu_sound_dy * 3)) + menu_choice_yplus;
@@ -1279,7 +1289,7 @@ instance menuitem_audio_provider_choice(c_menu_item_def) {
 
 instance menuitem_audio_speeker(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Lautsprecher";
+    text[0] = "Lautsprecher";
     text[1] = "";
     posx = 1000;
     posy = menu_start_sound_y + (menu_sound_dy * 4);
@@ -1292,7 +1302,7 @@ instance menuitem_audio_speeker(c_menu_item_def) {
 instance menuitem_audio_speeker_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "2 Lautsprecher|Kopfhörer|Surround|4 Lautsprecher|5.1 Lautsprecher|7.1 Lautsprecher";
+    text[0] = "2 Lautsprecher|Kopfhörer|Surround|4 Lautsprecher|5.1 Lautsprecher|7.1 Lautsprecher";
     fontname = menu_font_small;
     posx = 4300;
     posy = (menu_start_sound_y + (menu_sound_dy * 4)) + menu_choice_yplus;
@@ -1306,7 +1316,7 @@ instance menuitem_audio_speeker_choice(c_menu_item_def) {
 
 instance menuitem_audio_reverb(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Hall-Effekt";
+    text[0] = "Hall-Effekt";
     text[1] = "Sollen Halleffekte in Höhlen aktiviert werden ?";
     posx = 1000;
     posy = menu_start_sound_y + (menu_sound_dy * 5);
@@ -1319,7 +1329,7 @@ instance menuitem_audio_reverb(c_menu_item_def) {
 instance menuitem_audio_reverb_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "aus|an";
+    text[0] = MENU_OFF_ON;
     fontname = menu_font_small;
     posx = 4300;
     posy = (menu_start_sound_y + (menu_sound_dy * 5)) + menu_choice_yplus;
@@ -1333,7 +1343,7 @@ instance menuitem_audio_reverb_choice(c_menu_item_def) {
 
 instance menuitem_audio_reverb_speech(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Sprache-Hall";
+    text[0] = "Sprache-Hall";
     text[1] = "Sollen Halleffekte für Sprachausgabe aktiviert werden ?";
     posx = 1000;
     posy = menu_start_sound_y + (menu_sound_dy * 6);
@@ -1346,7 +1356,7 @@ instance menuitem_audio_reverb_speech(c_menu_item_def) {
 instance menuitem_audio_reverb_speech_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "kein|wenig|viel";
+    text[0] = "kein|wenig|viel";
     fontname = menu_font_small;
     posx = 4300;
     posy = (menu_start_sound_y + (menu_sound_dy * 6)) + menu_choice_yplus;
@@ -1360,7 +1370,7 @@ instance menuitem_audio_reverb_speech_choice(c_menu_item_def) {
 
 instance menuitem_audio_samplerate(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Sample-Rate";
+    text[0] = "Sample-Rate";
     text[1] = "Eine Änderung wirkt sich erst beim Neustart aus!";
     posx = 1000;
     posy = menu_start_sound_y + (menu_sound_dy * 7);
@@ -1373,7 +1383,7 @@ instance menuitem_audio_samplerate(c_menu_item_def) {
 instance menuitem_audio_samplerate_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "22 khz|44 khz";
+    text[0] = "22 khz|44 khz";
     fontname = menu_font_small;
     posx = 4300;
     posy = (menu_start_sound_y + (menu_sound_dy * 7)) + menu_choice_yplus;
@@ -1387,7 +1397,7 @@ instance menuitem_audio_samplerate_choice(c_menu_item_def) {
 
 instance menuitem_audio_back(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Zurück";
+    text[0] = MENU_BACK;
     posx = 1000;
     posy = menu_back_y;
     dimx = 6192;
@@ -1452,7 +1462,7 @@ instance menu_opt_controls(c_menu_def) {
 
 instance menu_item_nextmenu(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "weitere Tasten...";
+    text[0] = "weitere Tasten...";
     text[1] = "weitere Gothic 2 Tasten festlegen";
     posx = ctrl_sp1_1 + 2500;
     posy = (ctrl_y_start + (ctrl_y_step * 21)) + ctrl_group6;
@@ -1514,8 +1524,8 @@ const int ctrl_group5 = 720;
 const int ctrl_group6 = 900;
 
 instance menu_item_key_weapon_left(c_menu_item_def) {
-    text = "Schlag links";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Schlag links";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 1)) + ctrl_group2;
     onselaction = sel_action_execcommands;
@@ -1528,8 +1538,8 @@ instance menu_item_key_weapon_left(c_menu_item_def) {
 };
 
 instance menu_item_key_weapon_right(c_menu_item_def) {
-    text = "Schlag rechts";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Schlag rechts";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 2)) + ctrl_group2;
     onselaction = sel_action_execcommands;
@@ -1542,8 +1552,8 @@ instance menu_item_key_weapon_right(c_menu_item_def) {
 };
 
 instance menu_item_key_weapon_parade(c_menu_item_def) {
-    text = "Blocken";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Blocken";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 3)) + ctrl_group2;
     onselaction = sel_action_execcommands;
@@ -1557,7 +1567,7 @@ instance menu_item_key_weapon_parade(c_menu_item_def) {
 
 instance menu_item_inp_weapon_left(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 1)) + ctrl_group2;
     dimx = ctrl_dimx;
@@ -1574,7 +1584,7 @@ instance menu_item_inp_weapon_left(c_menu_item_def) {
 
 instance menu_item_inp_weapon_right(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 2)) + ctrl_group2;
     dimx = ctrl_dimx;
@@ -1591,7 +1601,7 @@ instance menu_item_inp_weapon_right(c_menu_item_def) {
 
 instance menu_item_inp_weapon_parade(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 3)) + ctrl_group2;
     dimx = ctrl_dimx;
@@ -1607,8 +1617,8 @@ instance menu_item_inp_weapon_parade(c_menu_item_def) {
 };
 
 instance menu_item_key_lockfocus(c_menu_item_def) {
-    text = "Gegner Lock";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Gegner Lock";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 4)) + ctrl_group2;
     onselaction = sel_action_execcommands;
@@ -1621,8 +1631,8 @@ instance menu_item_key_lockfocus(c_menu_item_def) {
 };
 
 instance menu_item_key_quickmana(c_menu_item_def) {
-    text = "Manatrank";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Manatrank";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 5)) + ctrl_group2;
     onselaction = sel_action_execcommands;
@@ -1635,8 +1645,8 @@ instance menu_item_key_quickmana(c_menu_item_def) {
 };
 
 instance menu_item_key_quickhealth(c_menu_item_def) {
-    text = "Heiltrank";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Heiltrank";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 6)) + ctrl_group2;
     onselaction = sel_action_execcommands;
@@ -1650,7 +1660,7 @@ instance menu_item_key_quickhealth(c_menu_item_def) {
 
 instance menu_item_inp_lockfocus(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 4)) + ctrl_group2;
     dimx = ctrl_dimx;
@@ -1667,7 +1677,7 @@ instance menu_item_inp_lockfocus(c_menu_item_def) {
 
 instance menu_item_inp_quickmana(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 5)) + ctrl_group2;
     dimx = ctrl_dimx;
@@ -1684,7 +1694,7 @@ instance menu_item_inp_quickmana(c_menu_item_def) {
 
 instance menu_item_inp_quickhealth(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 6)) + ctrl_group2;
     dimx = ctrl_dimx;
@@ -1700,7 +1710,7 @@ instance menu_item_inp_quickhealth(c_menu_item_def) {
 };
 
 instance menu_item_chg_keys_headline(c_menu_item_def) {
-    text = "STEUERUNG EINSTELLUNGEN";
+    text[0] = "STEUERUNG EINSTELLUNGEN";
     type = menu_item_text;
     posx = 0;
     posy = ctrl_y_title;
@@ -1711,7 +1721,7 @@ instance menu_item_chg_keys_headline(c_menu_item_def) {
 };
 
 instance menu_item_chg_extkeys_headline(c_menu_item_def) {
-    text = "ERWEITERTE STEUERUNG";
+    text[0] = "ERWEITERTE STEUERUNG";
     type = menu_item_text;
     posx = 0;
     posy = ctrl_y_title;
@@ -1722,8 +1732,8 @@ instance menu_item_chg_extkeys_headline(c_menu_item_def) {
 };
 
 instance menu_item_key_up(c_menu_item_def) {
-    text = "Vorwärts";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Vorwärts";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 0)) + ctrl_group1;
     onselaction = sel_action_execcommands;
@@ -1733,8 +1743,8 @@ instance menu_item_key_up(c_menu_item_def) {
 };
 
 instance menu_item_key_down(c_menu_item_def) {
-    text = "Rückwärts";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Rückwärts";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 1)) + ctrl_group1;
     onselaction = sel_action_execcommands;
@@ -1744,8 +1754,8 @@ instance menu_item_key_down(c_menu_item_def) {
 };
 
 instance menu_item_key_left(c_menu_item_def) {
-    text = "Links drehen";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Links drehen";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 2)) + ctrl_group1;
     onselaction = sel_action_execcommands;
@@ -1755,8 +1765,8 @@ instance menu_item_key_left(c_menu_item_def) {
 };
 
 instance menu_item_key_right(c_menu_item_def) {
-    text = "Rechts drehen";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Rechts drehen";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 3)) + ctrl_group1;
     onselaction = sel_action_execcommands;
@@ -1766,8 +1776,8 @@ instance menu_item_key_right(c_menu_item_def) {
 };
 
 instance menu_item_key_strafe_left(c_menu_item_def) {
-    text = "Seitwärts links";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Seitwärts links";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 4)) + ctrl_group1;
     onselaction = sel_action_execcommands;
@@ -1777,8 +1787,8 @@ instance menu_item_key_strafe_left(c_menu_item_def) {
 };
 
 instance menu_item_key_strafe_right(c_menu_item_def) {
-    text = "Seitwärts rechts";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Seitwärts rechts";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 5)) + ctrl_group1;
     onselaction = sel_action_execcommands;
@@ -1788,8 +1798,8 @@ instance menu_item_key_strafe_right(c_menu_item_def) {
 };
 
 instance menu_item_key_jumpclimbstrafe(c_menu_item_def) {
-    text = "Springen";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Springen";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 6)) + ctrl_group1;
     onselaction = sel_action_execcommands;
@@ -1799,8 +1809,8 @@ instance menu_item_key_jumpclimbstrafe(c_menu_item_def) {
 };
 
 instance menu_item_key_runmodetoggle(c_menu_item_def) {
-    text = "Gehen/Laufen";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Gehen/Laufen";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 7)) + ctrl_group1;
     onselaction = sel_action_execcommands;
@@ -1810,8 +1820,8 @@ instance menu_item_key_runmodetoggle(c_menu_item_def) {
 };
 
 instance menu_item_key_sneak(c_menu_item_def) {
-    text = "Schleichen";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Schleichen";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 8)) + ctrl_group1;
     onselaction = sel_action_execcommands;
@@ -1821,8 +1831,8 @@ instance menu_item_key_sneak(c_menu_item_def) {
 };
 
 instance menu_item_key_action(c_menu_item_def) {
-    text = "Aktion";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Aktion";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 9)) + ctrl_group2;
     onselaction = sel_action_execcommands;
@@ -1832,8 +1842,8 @@ instance menu_item_key_action(c_menu_item_def) {
 };
 
 instance menu_item_key_weapon(c_menu_item_def) {
-    text = "Waffe ziehen";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Waffe ziehen";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 10)) + ctrl_group2;
     onselaction = sel_action_execcommands;
@@ -1843,8 +1853,8 @@ instance menu_item_key_weapon(c_menu_item_def) {
 };
 
 instance menu_item_key_map(c_menu_item_def) {
-    text = "Karte";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Karte";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 11)) + ctrl_group2;
     onselaction = sel_action_execcommands;
@@ -1854,8 +1864,8 @@ instance menu_item_key_map(c_menu_item_def) {
 };
 
 instance menu_item_key_look(c_menu_item_def) {
-    text = "Umsehen";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Umsehen";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 14)) + ctrl_group3;
     onselaction = sel_action_execcommands;
@@ -1865,8 +1875,8 @@ instance menu_item_key_look(c_menu_item_def) {
 };
 
 instance menu_item_key_look_fp(c_menu_item_def) {
-    text = "FirstPerson";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "FirstPerson";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 15)) + ctrl_group3;
     onselaction = sel_action_execcommands;
@@ -1876,8 +1886,8 @@ instance menu_item_key_look_fp(c_menu_item_def) {
 };
 
 instance menu_item_key_inventory(c_menu_item_def) {
-    text = "Inventar";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Inventar";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 16)) + ctrl_group4;
     onselaction = sel_action_execcommands;
@@ -1887,8 +1897,8 @@ instance menu_item_key_inventory(c_menu_item_def) {
 };
 
 instance menu_item_key_screen_status(c_menu_item_def) {
-    text = "Spielerstatus";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Spielerstatus";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 17)) + ctrl_group4;
     onselaction = sel_action_execcommands;
@@ -1898,8 +1908,8 @@ instance menu_item_key_screen_status(c_menu_item_def) {
 };
 
 instance menu_item_key_screen_log(c_menu_item_def) {
-    text = "Missionen/Notizen";
-    text[1] = "Taste ENTF zum Löschen und RETURN zum definieren";
+    text[0] = "Missionen/Notizen";
+    text[1] = CTRL_KEYDEF;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 18)) + ctrl_group4;
     onselaction = sel_action_execcommands;
@@ -1910,7 +1920,7 @@ instance menu_item_key_screen_log(c_menu_item_def) {
 
 instance menu_item_inp_up(c_menu_item_def) {
     backpic = menu_kbdinput_back_pic;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     type = menu_item_input;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 0)) + ctrl_group1;
@@ -1924,7 +1934,7 @@ instance menu_item_inp_up(c_menu_item_def) {
 
 instance menu_item_inp_down(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 1)) + ctrl_group1;
     dimx = ctrl_dimx;
@@ -1938,7 +1948,7 @@ instance menu_item_inp_down(c_menu_item_def) {
 
 instance menu_item_inp_left(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 2)) + ctrl_group1;
     dimx = ctrl_dimx;
@@ -1952,7 +1962,7 @@ instance menu_item_inp_left(c_menu_item_def) {
 
 instance menu_item_inp_right(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 3)) + ctrl_group1;
     dimx = ctrl_dimx;
@@ -1966,7 +1976,7 @@ instance menu_item_inp_right(c_menu_item_def) {
 
 instance menu_item_inp_strafe_left(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 4)) + ctrl_group1;
     dimx = ctrl_dimx;
@@ -1980,7 +1990,7 @@ instance menu_item_inp_strafe_left(c_menu_item_def) {
 
 instance menu_item_inp_strafe_right(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 5)) + ctrl_group1;
     dimx = ctrl_dimx;
@@ -1994,7 +2004,7 @@ instance menu_item_inp_strafe_right(c_menu_item_def) {
 
 instance menu_item_inp_jumpclimbstrafe(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 6)) + ctrl_group1;
     dimx = ctrl_dimx;
@@ -2008,7 +2018,7 @@ instance menu_item_inp_jumpclimbstrafe(c_menu_item_def) {
 
 instance menu_item_inp_runmodetoggle(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 7)) + ctrl_group1;
     dimx = ctrl_dimx;
@@ -2022,7 +2032,7 @@ instance menu_item_inp_runmodetoggle(c_menu_item_def) {
 
 instance menu_item_inp_sneak(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 8)) + ctrl_group1;
     dimx = ctrl_dimx;
@@ -2036,7 +2046,7 @@ instance menu_item_inp_sneak(c_menu_item_def) {
 
 instance menu_item_inp_action(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 9)) + ctrl_group2;
     dimx = ctrl_dimx;
@@ -2050,7 +2060,7 @@ instance menu_item_inp_action(c_menu_item_def) {
 
 instance menu_item_inp_weapon(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 10)) + ctrl_group2;
     dimx = ctrl_dimx;
@@ -2064,7 +2074,7 @@ instance menu_item_inp_weapon(c_menu_item_def) {
 
 instance menu_item_inp_map(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 11)) + ctrl_group2;
     dimx = ctrl_dimx;
@@ -2078,7 +2088,7 @@ instance menu_item_inp_map(c_menu_item_def) {
 
 instance menu_item_inp_look(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 14)) + ctrl_group3;
     dimx = ctrl_dimx;
@@ -2092,7 +2102,7 @@ instance menu_item_inp_look(c_menu_item_def) {
 
 instance menu_item_inp_look_fp(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 15)) + ctrl_group3;
     dimx = ctrl_dimx;
@@ -2106,7 +2116,7 @@ instance menu_item_inp_look_fp(c_menu_item_def) {
 
 instance menu_item_inp_inventory(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 16)) + ctrl_group4;
     dimx = ctrl_dimx;
@@ -2120,7 +2130,7 @@ instance menu_item_inp_inventory(c_menu_item_def) {
 
 instance menu_item_inp_screen_status(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 17)) + ctrl_group4;
     dimx = ctrl_dimx;
@@ -2134,7 +2144,7 @@ instance menu_item_inp_screen_status(c_menu_item_def) {
 
 instance menu_item_inp_screen_log(c_menu_item_def) {
     type = menu_item_input;
-    text[1] = "Gewünschte Taste betätigen.";
+    text[1] = CTRL_KEYDEF_INFO;
     posx = ctrl_sp1_2;
     posy = (ctrl_y_start + (ctrl_y_step * 18)) + ctrl_group4;
     dimx = ctrl_dimx;
@@ -2147,7 +2157,7 @@ instance menu_item_inp_screen_log(c_menu_item_def) {
 };
 
 instance menu_item_chg_keys_set_default(c_menu_item_def) {
-    text = "Standard-Einstellung";
+    text[0] = "Standard-Einstellung";
     text[1] = "Aktiviert die Standardbelegung.";
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 19)) + ctrl_group5;
@@ -2159,7 +2169,7 @@ instance menu_item_chg_keys_set_default(c_menu_item_def) {
 };
 
 instance menu_item_chg_keys_set_alternative(c_menu_item_def) {
-    text = "Alternativ-Einstellung";
+    text[0] = "Alternativ-Einstellung";
     text[1] = "Aktiviert eine alternative Standardbelegung.";
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 20)) + ctrl_group5;
@@ -2172,7 +2182,7 @@ instance menu_item_chg_keys_set_alternative(c_menu_item_def) {
 
 instance menuitem_chg_keys_back(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Zurück";
+    text[0] = MENU_BACK;
     posx = ctrl_sp1_1;
     posy = (ctrl_y_start + (ctrl_y_step * 21)) + ctrl_group6;
     dimy = 300;
@@ -2203,7 +2213,7 @@ instance menu_opt_ext(c_menu_def) {
 };
 
 instance menuitem_ext_headline(c_menu_item_def) {
-    text = "ERWEITERT";
+    text[0] = "ERWEITERT";
     type = menu_item_text;
     posx = 0;
     posy = menu_title_y;
@@ -2214,7 +2224,7 @@ instance menuitem_ext_headline(c_menu_item_def) {
 
 instance menuitem_ext_fft(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Wasserwellen";
+    text[0] = "Wasserwellen";
     text[1] = "Wellenbewegungen an/aus";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 0);
@@ -2227,7 +2237,7 @@ instance menuitem_ext_fft(c_menu_item_def) {
 instance menuitem_ext_fft_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 0)) + menu_choice_yplus;
@@ -2241,7 +2251,7 @@ instance menuitem_ext_fft_choice(c_menu_item_def) {
 
 instance menuitem_ext_waterfade(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Wasserfading";
+    text[0] = "Wasserfading";
     text[1] = "Wasserfading an/aus";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 1);
@@ -2254,7 +2264,7 @@ instance menuitem_ext_waterfade(c_menu_item_def) {
 instance menuitem_ext_waterfade_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 1)) + menu_choice_yplus;
@@ -2268,7 +2278,7 @@ instance menuitem_ext_waterfade_choice(c_menu_item_def) {
 
 instance menuitem_ext_objwind(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Objekt Wind";
+    text[0] = "Objekt Wind";
     text[1] = "Objekt Wind an/aus";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 2);
@@ -2281,7 +2291,7 @@ instance menuitem_ext_objwind(c_menu_item_def) {
 instance menuitem_ext_objwind_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 2)) + menu_choice_yplus;
@@ -2295,7 +2305,7 @@ instance menuitem_ext_objwind_choice(c_menu_item_def) {
 
 instance menuitem_ext_cloudshadow(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Wolkenschatten";
+    text[0] = "Wolkenschatten";
     text[1] = "Regen-Wolkenschatten an/aus";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 3);
@@ -2308,7 +2318,7 @@ instance menuitem_ext_cloudshadow(c_menu_item_def) {
 instance menuitem_ext_cloudshadow_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 3)) + menu_choice_yplus;
@@ -2322,7 +2332,7 @@ instance menuitem_ext_cloudshadow_choice(c_menu_item_def) {
 
 instance menuitem_ext_ambientpfx(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "DetailPfx";
+    text[0] = "DetailPfx";
     text[1] = "Ambientpartikel an/aus";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 4);
@@ -2335,7 +2345,7 @@ instance menuitem_ext_ambientpfx(c_menu_item_def) {
 instance menuitem_ext_ambientpfx_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 4)) + menu_choice_yplus;
@@ -2349,7 +2359,7 @@ instance menuitem_ext_ambientpfx_choice(c_menu_item_def) {
 
 instance menuitem_ext_envmap(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Glanzeffekte";
+    text[0] = "Glanzeffekte";
     text[1] = "Glanzeffekte an/aus";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 5);
@@ -2362,7 +2372,7 @@ instance menuitem_ext_envmap(c_menu_item_def) {
 instance menuitem_ext_envmap_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 5)) + menu_choice_yplus;
@@ -2376,7 +2386,7 @@ instance menuitem_ext_envmap_choice(c_menu_item_def) {
 
 instance menuitem_ext_radialfog(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Radialnebel";
+    text[0] = "Radialnebel";
     text[1] = "Radialnebel an/aus";
     posx = 1000;
     posy = menu_start_y + (menu_dy * 6);
@@ -2389,7 +2399,7 @@ instance menuitem_ext_radialfog(c_menu_item_def) {
 instance menuitem_ext_radialfog_choice(c_menu_item_def) {
     backpic = menu_choice_back_pic;
     type = menu_item_choicebox;
-    text = "nein|ja";
+    text[0] = MENU_NO_YES;
     fontname = menu_font_small;
     posx = 5000;
     posy = (menu_start_y + (menu_dy * 6)) + menu_choice_yplus;
@@ -2403,7 +2413,7 @@ instance menuitem_ext_radialfog_choice(c_menu_item_def) {
 
 instance menuitem_ext_back(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Zurück";
+    text[0] = MENU_BACK;
     posx = 1000;
     posy = menu_back_y;
     dimx = 6192;
@@ -2423,7 +2433,7 @@ instance menu_leave_game(c_menu_def) {
 };
 
 instance menuitem_leave_game_headline(c_menu_item_def) {
-    text = "Das Spiel wirklich verlassen?";
+    text[0] = "Das Spiel wirklich verlassen?";
     type = menu_item_text;
     posx = 0;
     posy = 3400;
@@ -2434,7 +2444,7 @@ instance menuitem_leave_game_headline(c_menu_item_def) {
 
 instance menuitem_leave_game_yes(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Ja";
+    text[0] = "Ja";
     text[1] = "Ja, ich möchte das Spiel beenden.";
     posx = 0;
     posy = 4400;
@@ -2447,7 +2457,7 @@ instance menuitem_leave_game_yes(c_menu_item_def) {
 
 instance menuitem_leave_game_no(c_menu_item_def) {
     backpic = menu_item_back_pic;
-    text = "Nein";
+    text[0] = "Nein";
     text[1] = "Nein, ich möchte weiterspielen.";
     posx = 0;
     posy = 5000;
@@ -2540,7 +2550,7 @@ const int savegame_dx1 = 3500;
 const int savegame_dx2 = 1000;
 
 instance menuitem_load_headline(c_menu_item_def) {
-    text = "SPIEL LADEN";
+    text[0] = "SPIEL LADEN";
     type = menu_item_text;
     posx = savegame_x1;
     posy = 700;
@@ -2549,7 +2559,7 @@ instance menuitem_load_headline(c_menu_item_def) {
 };
 
 instance menuitem_save_headline(c_menu_item_def) {
-    text = "SPIEL SPEICHERN";
+    text[0] = "SPIEL SPEICHERN";
     type = menu_item_text;
     posx = savegame_x1;
     posy = 700;
@@ -2568,7 +2578,7 @@ instance menuitem_loadsave_thumbpic(c_menu_item_def) {
 
 instance menuitem_loadsave_levelname(c_menu_item_def) {
     type = menu_item_text;
-    text = "Welt:";
+    text[0] = "Welt:";
     posx = savegame_x2;
     posy = 3960;
     fontname = menu_font_small;
@@ -2577,7 +2587,7 @@ instance menuitem_loadsave_levelname(c_menu_item_def) {
 
 instance menuitem_loadsave_levelname_value(c_menu_item_def) {
     type = menu_item_text;
-    text = "";
+    text[0] = "";
     posx = savegame_x2;
     posy = 3960 + 320;
     dimx = 8192 - posx;
@@ -2588,7 +2598,7 @@ instance menuitem_loadsave_levelname_value(c_menu_item_def) {
 
 instance menuitem_loadsave_datetime(c_menu_item_def) {
     type = menu_item_text;
-    text = "gespeichert:";
+    text[0] = "gespeichert:";
     posx = savegame_x2;
     posy = 4900;
     fontname = menu_font_small;
@@ -2597,7 +2607,7 @@ instance menuitem_loadsave_datetime(c_menu_item_def) {
 
 instance menuitem_loadsave_datetime_value(c_menu_item_def) {
     type = menu_item_text;
-    text = "";
+    text[0] = "";
     posx = savegame_x2;
     posy = 4900 + 320;
     dimx = 8192 - posx;
@@ -2608,7 +2618,7 @@ instance menuitem_loadsave_datetime_value(c_menu_item_def) {
 
 instance menuitem_loadsave_gametime(c_menu_item_def) {
     type = menu_item_text;
-    text = "Spielzeit:";
+    text[0] = "Spielzeit:";
     posx = savegame_x2;
     posy = 6200;
     fontname = menu_font_small;
@@ -2617,7 +2627,7 @@ instance menuitem_loadsave_gametime(c_menu_item_def) {
 
 instance menuitem_loadsave_gametime_value(c_menu_item_def) {
     type = menu_item_text;
-    text = "";
+    text[0] = "";
     posx = savegame_x2;
     posy = 6200 + 320;
     dimx = 8192 - posx;
@@ -2628,7 +2638,7 @@ instance menuitem_loadsave_gametime_value(c_menu_item_def) {
 
 instance menuitem_loadsave_playtime_value(c_menu_item_def) {
     type = menu_item_text;
-    text = "";
+    text[0] = "";
     posx = savegame_x2;
     posy = 6200 + (320 * 2);
     dimx = 8192 - posx;
@@ -2638,14 +2648,14 @@ instance menuitem_loadsave_playtime_value(c_menu_item_def) {
 };
 
 instance menuitem_save_back(c_menu_item_def) {
-    text = "Zurück";
-    text[1] = "Back";
+    text[0] = MENU_BACK;
+    text[1] = MENU_BACK;
     posx = savegame_x1;
     posy = savegame_y + (21 * savegame_dy);
 };
 
 instance menuitem_load_back(c_menu_item_def) {
-    text = "Zurück";
+    text[0] = MENU_BACK;
     posx = savegame_x1;
     posy = savegame_y + (21 * savegame_dy);
 };
@@ -2653,7 +2663,7 @@ instance menuitem_load_back(c_menu_item_def) {
 instance menuitem_save_slot1(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 1 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (0 * savegame_dy);
@@ -2669,7 +2679,7 @@ instance menuitem_save_slot1(c_menu_item_def) {
 instance menuitem_save_slot2(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 2 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (1 * savegame_dy);
@@ -2685,7 +2695,7 @@ instance menuitem_save_slot2(c_menu_item_def) {
 instance menuitem_save_slot3(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 3 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (2 * savegame_dy);
@@ -2701,7 +2711,7 @@ instance menuitem_save_slot3(c_menu_item_def) {
 instance menuitem_save_slot4(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 4 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (3 * savegame_dy);
@@ -2717,7 +2727,7 @@ instance menuitem_save_slot4(c_menu_item_def) {
 instance menuitem_save_slot5(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 5 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (4 * savegame_dy);
@@ -2733,7 +2743,7 @@ instance menuitem_save_slot5(c_menu_item_def) {
 instance menuitem_save_slot6(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 6 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (5 * savegame_dy);
@@ -2749,7 +2759,7 @@ instance menuitem_save_slot6(c_menu_item_def) {
 instance menuitem_save_slot7(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 7 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (6 * savegame_dy);
@@ -2765,7 +2775,7 @@ instance menuitem_save_slot7(c_menu_item_def) {
 instance menuitem_save_slot8(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 8 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (7 * savegame_dy);
@@ -2780,7 +2790,7 @@ instance menuitem_save_slot8(c_menu_item_def) {
 
 instance menuitem_save_slot9(c_menu_item_def) {
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 9 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (8 * savegame_dy);
@@ -2796,7 +2806,7 @@ instance menuitem_save_slot9(c_menu_item_def) {
 instance menuitem_save_slot10(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 10 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (9 * savegame_dy);
@@ -2812,7 +2822,7 @@ instance menuitem_save_slot10(c_menu_item_def) {
 instance menuitem_save_slot11(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 11 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (10 * savegame_dy);
@@ -2828,7 +2838,7 @@ instance menuitem_save_slot11(c_menu_item_def) {
 instance menuitem_save_slot12(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 12 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (11 * savegame_dy);
@@ -2844,7 +2854,7 @@ instance menuitem_save_slot12(c_menu_item_def) {
 instance menuitem_save_slot13(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 13 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (12 * savegame_dy);
@@ -2860,7 +2870,7 @@ instance menuitem_save_slot13(c_menu_item_def) {
 instance menuitem_save_slot14(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 14 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (13 * savegame_dy);
@@ -2876,7 +2886,7 @@ instance menuitem_save_slot14(c_menu_item_def) {
 instance menuitem_save_slot15(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 15 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (14 * savegame_dy);
@@ -2892,7 +2902,7 @@ instance menuitem_save_slot15(c_menu_item_def) {
 instance menuitem_save_slot16(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 16 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (15 * savegame_dy);
@@ -2908,7 +2918,7 @@ instance menuitem_save_slot16(c_menu_item_def) {
 instance menuitem_save_slot17(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 17 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (16 * savegame_dy);
@@ -2924,7 +2934,7 @@ instance menuitem_save_slot17(c_menu_item_def) {
 instance menuitem_save_slot18(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 18 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (17 * savegame_dy);
@@ -2940,7 +2950,7 @@ instance menuitem_save_slot18(c_menu_item_def) {
 instance menuitem_save_slot19(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 19 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (18 * savegame_dy);
@@ -2956,7 +2966,7 @@ instance menuitem_save_slot19(c_menu_item_def) {
 instance menuitem_save_slot20(c_menu_item_def) {
     backpic = menu_input_back_pic;
     type = menu_item_input;
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 20 - RETURN zum Speichern in diesem Slot.";
     posx = savegame_x1;
     posy = savegame_y + (19 * savegame_dy);
@@ -2970,7 +2980,7 @@ instance menuitem_save_slot20(c_menu_item_def) {
 };
 
 instance menuitem_load_slot1(c_menu_item_def) {
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 1 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (0 * savegame_dy);
@@ -2982,7 +2992,7 @@ instance menuitem_load_slot1(c_menu_item_def) {
 };
 
 instance menuitem_load_slot2(c_menu_item_def) {
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 2 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (1 * savegame_dy);
@@ -2994,7 +3004,7 @@ instance menuitem_load_slot2(c_menu_item_def) {
 };
 
 instance menuitem_load_slot3(c_menu_item_def) {
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 3 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (2 * savegame_dy);
@@ -3006,7 +3016,7 @@ instance menuitem_load_slot3(c_menu_item_def) {
 };
 
 instance menuitem_load_slot4(c_menu_item_def) {
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 4 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (3 * savegame_dy);
@@ -3018,7 +3028,7 @@ instance menuitem_load_slot4(c_menu_item_def) {
 };
 
 instance menuitem_load_slot5(c_menu_item_def) {
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 5 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (4 * savegame_dy);
@@ -3030,7 +3040,7 @@ instance menuitem_load_slot5(c_menu_item_def) {
 };
 
 instance menuitem_load_slot6(c_menu_item_def) {
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 6 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (5 * savegame_dy);
@@ -3042,7 +3052,7 @@ instance menuitem_load_slot6(c_menu_item_def) {
 };
 
 instance menuitem_load_slot7(c_menu_item_def) {
-    text = "unknown";
+    text[0] = "unknown";
     text[1] = "Slot 7 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (6 * savegame_dy);
@@ -3054,7 +3064,7 @@ instance menuitem_load_slot7(c_menu_item_def) {
 };
 
 instance menuitem_load_slot8(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 8 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (7 * savegame_dy);
@@ -3066,7 +3076,7 @@ instance menuitem_load_slot8(c_menu_item_def) {
 };
 
 instance menuitem_load_slot9(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 9 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (8 * savegame_dy);
@@ -3078,7 +3088,7 @@ instance menuitem_load_slot9(c_menu_item_def) {
 };
 
 instance menuitem_load_slot10(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 10 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (9 * savegame_dy);
@@ -3090,7 +3100,7 @@ instance menuitem_load_slot10(c_menu_item_def) {
 };
 
 instance menuitem_load_slot11(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 11 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (10 * savegame_dy);
@@ -3102,7 +3112,7 @@ instance menuitem_load_slot11(c_menu_item_def) {
 };
 
 instance menuitem_load_slot12(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 12 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (11 * savegame_dy);
@@ -3114,7 +3124,7 @@ instance menuitem_load_slot12(c_menu_item_def) {
 };
 
 instance menuitem_load_slot13(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 13 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (12 * savegame_dy);
@@ -3126,7 +3136,7 @@ instance menuitem_load_slot13(c_menu_item_def) {
 };
 
 instance menuitem_load_slot14(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 14 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (13 * savegame_dy);
@@ -3138,7 +3148,7 @@ instance menuitem_load_slot14(c_menu_item_def) {
 };
 
 instance menuitem_load_slot15(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 15 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (14 * savegame_dy);
@@ -3150,7 +3160,7 @@ instance menuitem_load_slot15(c_menu_item_def) {
 };
 
 instance menuitem_load_slot16(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 16 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (15 * savegame_dy);
@@ -3162,7 +3172,7 @@ instance menuitem_load_slot16(c_menu_item_def) {
 };
 
 instance menuitem_load_slot17(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 17 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (16 * savegame_dy);
@@ -3174,7 +3184,7 @@ instance menuitem_load_slot17(c_menu_item_def) {
 };
 
 instance menuitem_load_slot18(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 18 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (17 * savegame_dy);
@@ -3186,7 +3196,7 @@ instance menuitem_load_slot18(c_menu_item_def) {
 };
 
 instance menuitem_load_slot19(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 19 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (18 * savegame_dy);
@@ -3198,7 +3208,7 @@ instance menuitem_load_slot19(c_menu_item_def) {
 };
 
 instance menuitem_load_slot20(c_menu_item_def) {
-    text = "---";
+    text[0] = "---";
     text[1] = "Slot 20 - RETURN zum Laden des Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (19 * savegame_dy);
@@ -3210,7 +3220,7 @@ instance menuitem_load_slot20(c_menu_item_def) {
 };
 
 instance menuitem_load_slot0(c_menu_item_def) {
-    text = "    - Quick Save -    ";
+    text[0] = "    - Quick Save -    ";
     text[1] = "RETURN zum Laden des gespeicherten Spielstandes.";
     posx = savegame_x1;
     posy = savegame_y + (20 * savegame_dy);
@@ -3261,7 +3271,7 @@ const int log_item_list_height = 6100;
 const int log_item_list_width = 4500;
 
 instance menu_item_sel_missions_act(c_menu_item_def) {
-    text = "Aktuelle\nMissionen";
+    text[0] = "Aktuelle\nMissionen";
     posx = log_item_x1;
     posy = 1500;
     dimx = log_item_dx1;
@@ -3273,7 +3283,7 @@ instance menu_item_sel_missions_act(c_menu_item_def) {
 };
 
 instance menu_item_sel_missions_old(c_menu_item_def) {
-    text = "Erfüllte\nMissionen";
+    text[0] = "Erfüllte\nMissionen";
     posx = log_item_x1;
     posy = 2500;
     dimx = log_item_dx1;
@@ -3285,7 +3295,7 @@ instance menu_item_sel_missions_old(c_menu_item_def) {
 };
 
 instance menu_item_sel_missions_failed(c_menu_item_def) {
-    text = "Gescheiterte\nMissionen";
+    text[0] = "Gescheiterte\nMissionen";
     posx = log_item_x1;
     posy = 3500;
     dimx = log_item_dx1;
@@ -3297,7 +3307,7 @@ instance menu_item_sel_missions_failed(c_menu_item_def) {
 };
 
 instance menu_item_sel_log(c_menu_item_def) {
-    text = "Allgemeine\nInfos";
+    text[0] = "Allgemeine\nInfos";
     posx = log_item_x1;
     posy = 4500;
     dimx = log_item_dx1;
@@ -3310,7 +3320,7 @@ instance menu_item_sel_log(c_menu_item_def) {
 
 instance menu_item_list_missions_act(c_menu_item_def) {
     type = menu_item_listbox;
-    text = "Act Missions";
+    text[0] = "Act Missions";
     posx = log_item_list_x;
     posy = log_item_list_y;
     dimx = log_item_list_width;
@@ -3326,7 +3336,7 @@ instance menu_item_list_missions_act(c_menu_item_def) {
 
 instance menu_item_list_missions_failed(c_menu_item_def) {
     type = menu_item_listbox;
-    text = "Old Missions";
+    text[0] = "Old Missions";
     posx = log_item_list_x;
     posy = log_item_list_y;
     dimx = log_item_list_width;
@@ -3342,7 +3352,7 @@ instance menu_item_list_missions_failed(c_menu_item_def) {
 
 instance menu_item_list_missions_old(c_menu_item_def) {
     type = menu_item_listbox;
-    text = "Old Missions";
+    text[0] = "Old Missions";
     posx = log_item_list_x;
     posy = log_item_list_y;
     dimx = log_item_list_width;
@@ -3358,7 +3368,7 @@ instance menu_item_list_missions_old(c_menu_item_def) {
 
 instance menu_item_list_log(c_menu_item_def) {
     type = menu_item_listbox;
-    text = "Log";
+    text[0] = "Log";
     posx = log_item_list_x;
     posy = log_item_list_y;
     dimx = log_item_list_width;
@@ -3373,7 +3383,7 @@ instance menu_item_list_log(c_menu_item_def) {
 };
 
 instance menu_item_content_viewer(c_menu_item_def) {
-    text = "no content";
+    text[0] = "no content";
     posx = 0;
     posy = 0;
     dimx = 8192;
@@ -3387,7 +3397,7 @@ instance menu_item_content_viewer(c_menu_item_def) {
 };
 
 instance menu_item_day_title(c_menu_item_def) {
-    text = "Tag";
+    text[0] = "Tag";
     posx = 1800;
     posy = 6000;
     fontname = log_font_datetime;
@@ -3395,7 +3405,7 @@ instance menu_item_day_title(c_menu_item_def) {
 };
 
 instance menu_item_time_title(c_menu_item_def) {
-    text = "Zeit:";
+    text[0] = "Zeit:";
     posx = 1500;
     posy = 6300;
     fontname = log_font_datetime;
@@ -3403,7 +3413,7 @@ instance menu_item_time_title(c_menu_item_def) {
 };
 
 instance menu_item_day(c_menu_item_def) {
-    text = "XX.";
+    text[0] = "XX.";
     posx = 1500;
     posy = 6000;
     dimx = 300;
@@ -3412,7 +3422,7 @@ instance menu_item_day(c_menu_item_def) {
 };
 
 instance menu_item_time(c_menu_item_def) {
-    text = "XX:XX";
+    text[0] = "XX:XX";
     posx = 2200;
     posy = 6300;
     fontname = log_font_datetime;
@@ -3431,7 +3441,7 @@ instance menu_status(c_menu_def) {
 };
 
 instance menu_item_history(c_menu_item_def) {
-    text = "";
+    text[0] = "";
     posx = 0;
     posy = 0;
     dimx = 8192;
