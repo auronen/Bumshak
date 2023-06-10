@@ -29983,9 +29983,6 @@ func int dia_orc_151_narkash_mission1_condition() {
 };
 
 func void dia_orc_151_narkash_mission1_info() {
-#if debug
-    ai_output(self, other, "DIA_ORC_151_Narkash_Mission1_18_000"); //Hello GaroK :herosmile: the decompilation works, the mod still needs to be tested, though...
-#endif
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission1_18_00"); //Willkommen in unserer Horde, Bumshak. Ich bin Narkash. Du unterstehst hier meinem Befehl.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission1_18_01"); //Alle Krieger im Tal bereiten sich auf den großen Sturm auf die Burg vor. Unsere Chancen stehen gut. Die Menschen sind geschwächt.
     ai_output(self, other, "DIA_ORC_151_Narkash_Mission1_18_02"); //Aber bevor ich dich in den Stand des Kriegers erhebe, musst du mir erst beweisen, dass du würdig bist.
